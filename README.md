@@ -56,6 +56,7 @@ The **desktop site** will be one screen split into three sections (from left to 
 ![Mobile map view page wireframe](./proposal/images/capstone_mobile_map.png)
 ![Mobile list view page wireframe](./proposal/images/capstone_mobile_list.png)
 ![Mobile about details page wireframe](./proposal/images/capstone_mobile_about.png)
+
 **Desktop Width:**
 
 ![Desktop page wireframe](./proposal/images/capstone_desktop.png)
