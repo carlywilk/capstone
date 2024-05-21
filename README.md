@@ -15,6 +15,7 @@ This app is built on the foundations of intersectionality, consent-based care, a
 
 ### Features
 The user will be directed to the landing page at app start. On the mobile site, the user will be able to read a description of the app and then choose between searching for a specific resource or navigating to a different page (map view, list view, or more details about site). On the desktop site, the user will see all functionality within the one page. 
+
 **From left to right are the following three sections:**
 1. **Site Information:** The site information will include the logo, about, and search bar.
 2. **Map View:** The middle section will be a map where the user can see pins of the resources.
@@ -36,11 +37,13 @@ List technologies that will be used in your app, including any libraries to save
 
 ### Sitemap
 The site will have a mobile and desktop width.
+
 The **mobile site** will have the following pages:
 - Landing Page
 - Map View Page
 - List View Page
 - More Details Page
+
 The **desktop site** will be one screen split into three sections (from left to right):
 - Site title and information
 - Map View Section
@@ -48,11 +51,13 @@ The **desktop site** will be one screen split into three sections (from left to 
 
 ### Mockups
 **Mobile Width:**
+
 ![Mobile landing page wireframe](./proposal/images/capstone_mobile_landing.png)
 ![Mobile map view page wireframe](./proposal/images/capstone_mobile_map.png)
 ![Mobile list view page wireframe](./proposal/images/capstone_mobile_list.png)
 ![Mobile about details page wireframe](./proposal/images/capstone_mobile_about.png)
 **Desktop Width:**
+
 ![Desktop page wireframe](./proposal/images/capstone_desktop.png)
 
 ### Data 
@@ -84,13 +89,16 @@ List endpoints that your server will implement, including HTTP methods, paramete
 - [ ] Resource research and database creation __(BY: June 2, 2024)__
 - [ ] Plan styling, partials, and breakpoints __(BY: June 2, 2024)__
 - [ ] API mapping and Postman testing for public API __(BY: June 2, 2024)__
+
 **SUNDAY, JUNE 2 TO SUNDAY, JUNE 9, 2024: PROJECT CREATION**
 - [ ] Code and style base HTML, components __(BY: June 3, 2024)__
 - [ ] Code and style pages, routes, and incorporate components __(BY: June 3, 2024)__
 - [ ] Code in assets as needed __(BY: June 3, 2024)__
 - [ ] Implement API and server functionality __(BY: June 7, 2024)__
 - [ ] If time permits: plan, code, and style animations __(BY: June 9, 2024)__
+
 **MONDAY, JUNE 3 TO SUNDAY, JUNE 9, 2024: DEBUG PROJECT AND STYLE FIXES**
+
 **SUNDAY, JUNE 9, 2023: PROJECT SUBMISSION**
 
 
