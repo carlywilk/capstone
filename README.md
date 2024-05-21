@@ -1,55 +1,105 @@
 # Project Title
+**Queer Health Hub (QHH)**
+
 
 ## Overview
-
-What is your app? Brief description in a couple of sentences.
+Queer Health Hub is a resource for those part of the 2SLGBTQIA++ community to access information, healthcare, and community within their city. Starting with the city of Toronto, the app will pin locations, queer friendly and safe establishments at which individuals can access healthcare and health-related information.  
 
 ### Problem
-
-Why is your app needed? Background information around any pain points or other reasons.
+Getting access to quality, safe healthcare as a queer person is very hard to do. Oftentimes recommendations are word of mouth, requiring individuals to be active within their circles or know the right people in order to get the care they require. In order to increase healthcare access for those part of the 2SLGBTQIA++ community, I am creating this app as a hub for all things healthcare related. Information regarding resources, procedures, providers, and locations will be centralized into one spot for the user to browse freely. 
 
 ### User Profile
-
-Who will use your app? How will they use it? Any special considerations that your app must take into account.
+My goal demographic is the queer community and anyone within the 2SLGBTQIA++ acronym. I would especially like this app to be a safe and outstanding space for those in the transgender or intersex communities as anti-trans rhetoric continues to unfortunately blossom within our society at present time. 
+I would also like to have special considerations for the Indigenous community, ensuring I provide accurate information and gateways to resources, but also ensuring that non-Western forms of medicine are also taken into consideration and highlighted within the app. 
+This app is built on the foundations of intersectionality, consent-based care, and queer safety. 
 
 ### Features
+The user will be directed to the landing page at app start. On the mobile site, the user will be able to read a description of the app and then choose between searching for a specific resource or navigating to a different page (map view, list view, or more details about site). On the desktop site, the user will see all functionality within the one page. 
+**From left to right are the following three sections:**
+1. **Site Information:** The site information will include the logo, about, and search bar.
+2. **Map View:** The middle section will be a map where the user can see pins of the resources.
+3. **Resource View:** The resource view will include a resource details card, an emergency services information card, and a legend for the map and site. 
 
-List the functionality that your app will include. These can be written as user stories or descriptions with related details. Do not describe _how_ these features are implemented, only _what_ needs to be implemented.
 
 ## Implementation
 
-### Tech Stack
-
+### Tech Stack ❌
 List technologies that will be used in your app, including any libraries to save time or provide more functionality. Be sure to research any potential limitations.
+- VS Code
+- GitHub
+- MySQL (maybe) *️⃣
+- npm *️⃣ (do you want us to list additional packages within npm that we will be using (eg. express, cors, uuid, etc)?)
 
 ### APIs
-
-List any external sources of data that will be used in your app.
+- [Google Maps API](https://developers.google.com/maps/documentation)
+- Queer Healthcare Database (self-created)
 
 ### Sitemap
-
-List the pages of your app with brief descriptions. You can show this visually, or write it out.
+The site will have a mobile and desktop width.
+The **mobile site** will have the following pages:
+- Landing Page
+- Map View Page
+- List View Page
+- More Details Page
+The **desktop site** will be one screen split into three sections (from left to right):
+- Site title and information
+- Map View Section
+- Resource Information Section
 
 ### Mockups
+**Mobile Width:**
+![Mobile landing page wireframe](./proposal/images/capstone_mobile_landing.png)
+![Mobile map view page wireframe](./proposal/images/capstone_mobile_map.png)
+![Mobile list view page wireframe](./proposal/images/capstone_mobile_list.png)
+![Mobile about details page wireframe](./proposal/images/capstone_mobile_about.png)
+**Desktop Width:**
+![Desktop page wireframe](./proposal/images/capstone_desktop.png)
 
-Provide visuals of your app's screens. You can use tools like Figma or pictures of hand-drawn sketches.
+### Data 
+The data comes in three general types:
+1. Map location
+2. Provider/resource location
+3. Provider/resource details. 
+The location of the provider/resource will be determined and pinned to the map. Users can click on this pin and see additional details for the provider/resource. The map data relies on the Google Maps API and the map pin location of the provider relies on the address/location in the self-created database. 
 
-### Data
-
-Describe your data and the relationships between them. You can show this visually using diagrams, or write it out. 
-
-### Endpoints
-
+### Endpoints ❌
 List endpoints that your server will implement, including HTTP methods, parameters, and example responses.
+- GET / provider location
+- GET /:id provider details
+- GET /:type returns a list of resources for a specific type of healthcare (eg. transgender care, mental health resources, queer-friendly gps, etc.)
+- GET / Google Maps data
 
-### Auth
+### Auth ❌
+- An additional functionality, should there be reasonable time to implement, will be a user account feature through which users can login in and bookmark their locations. This will be stored in server/api memory and therefore remain indefinitely for the user to access.
+- Describe how authentication/authorization will be implemented. ❌
 
-Does your project include any login or user profile functionality? If so, describe how authentication/authorization will be implemented.
 
-## Roadmap
+## Roadmap 
+**MONDAY, MAY 13 TO SATURDAY, JUNE 2, 2024: PROJECT PLANNING**
+- [ ] Write proposal __(BY: May 28, 2024)__
+- [ ] Create mockups and style guide __(BY: May 28, 2024)__
+- [ ] Submit proposal __(DUE: May 28, 2024)__
+- [ ] Asset procurement and mapping (eg. logo, images, icons, fonts) __(BY: May 31, 2024)__
+- [ ] Component, page, and routes mapping __(BY: June 2, 2024)__
+- [ ] Resource research and database creation __(BY: June 2, 2024)__
+- [ ] Plan styling, partials, and breakpoints __(BY: June 2, 2024)__
+- [ ] API mapping and Postman testing for public API __(BY: June 2, 2024)__
+**SUNDAY, JUNE 2 TO SUNDAY, JUNE 9, 2024: PROJECT CREATION**
+- [ ] Code and style base HTML, components __(BY: June 3, 2024)__
+- [ ] Code and style pages, routes, and incorporate components __(BY: June 3, 2024)__
+- [ ] Code in assets as needed __(BY: June 3, 2024)__
+- [ ] Implement API and server functionality __(BY: June 7, 2024)__
+- [ ] If time permits: plan, code, and style animations __(BY: June 9, 2024)__
+**MONDAY, JUNE 3 TO SUNDAY, JUNE 9, 2024: DEBUG PROJECT AND STYLE FIXES**
+**SUNDAY, JUNE 9, 2023: PROJECT SUBMISSION**
 
-Scope your project as a sprint. Break down the tasks that will need to be completed and map out timeframes for implementation. Think about what you can reasonably complete before the due date. The more detail you provide, the easier it will be to build.
 
 ## Nice-to-haves
-
-Your project will be marked based on what you committed to in the above document. Under nice-to-haves, you can list any additional features you may complete if you have extra time, or after finishing.
+- Tablet width styling
+- User login / memory:
+    - Bookmarks
+    - User feedback on resources (form)
+    - User contributions (both the community, but also healthcare providers indicating their allyship) (form)
+- Directions to resource:
+    - From the location of a specific address
+    - From the location of the current user
