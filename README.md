@@ -24,17 +24,22 @@ The user will be directed to the landing page at app start. On the mobile site, 
 
 ## Implementation
 
-### Tech Stack ❌
-List technologies that will be used in your app, including any libraries to save time or provide more functionality. Be sure to research any potential limitations.
+### Tech Stack 
 - VS Code
 - GitHub
 - MySQL
-- npm *️⃣ (do you want us to list additional packages within npm that we will be using (eg. express, cors, uuid, etc)?)
+- npm
+- react-router-dom
+- express
+- nodemon
+- cors
+- dotenv
+- axios
 - @mui/base
 
 ### APIs
 - [Google Maps API](https://developers.google.com/maps/documentation)
-- Queer Healthcare Database (self-created)
+- Queer Healthcare Database (self-created seed file)
 
 ### Sitemap
 The site will have a mobile and desktop width.
@@ -68,7 +73,7 @@ The data comes in two general types:
 2. Provider/resource details (including provider/resource locatio)
 The location of the provider/resource will be determined and pinned to the map. Users can click on this pin and see additional details for the provider/resource. The map data relies on the Google Maps API and the map pin location of the provider relies on the address/location in the self-created database. 
 
-### Endpoints ❌
+### Endpoints
 List endpoints that your server will implement, including HTTP methods, parameters, and example responses.
 - GET "/" -> list of all provider/resource locations, seen in map view
     - Returns 200 if successful
@@ -90,23 +95,29 @@ List endpoints that your server will implement, including HTTP methods, paramete
     ```
 
 - GET "/resources" -> list of all provider names and type, accordian style (expansion shows provider details/further information on the provider)
-    - Returns 200 if successful, 400 if 
+    - Returns 200 if successful, 404 if list of resources is not found
     - Example response:
     ```
     [
         {
             id: 1,
-            resource_name: Sherbourne Health
-            resource_type: ["Primary Care", "Mental Health", "Trans Health Care", "Post-Surgical Support", "Information & Knowledge"],
-            resource_treatment_options: 
-            resource_website: "https://sherbourne.on.ca/",
-            resource_address: "333 Sherbourne Street",
-            resource_phone: "416-324-4100",
-            resource_email: "info@sherbourne.on.ca",
-            resource_hours: "Monday, Tuesday, Wednesday: 9 a.m.- 8 p.m; Thursday: 9 a.m.- 1 p.m & 4 – 8 p.m; Friday: 9 a.m. – 5 p.m; Saturday: 9 a.m. – 12 p.m.",
-            resource_navigation_accessibility: ["Subway", "Streetcar", "Bus", "Walking"],
-            resource_accessible:
+            resource_name: Sherbourne Health,
+            resource_type: ["Primary Care", "Mental Health", "Trans Health Care", "Post-Surgical Support", "Information & Knowledge"]
         },
+        {
+            id: 2,
+            resource_name: Woman's College Hospital,
+            resource_type: ["Sexual Health", "Endocrinology", "Primary Care", "Indigenous Health", "Gynecology", "Mental Health"]
+        },
+        ...{}, ... {}
+    ]
+    ```
+
+- GET "/resources/:id" -> details for a specific provider (what is shown on toggle in accordian)
+    - Returns 200 if successful, 404 if id not found
+    - Example response:
+    ```
+    [
         {
             id: 2,
             resource_name: Woman's College Hospital,
@@ -124,17 +135,28 @@ List endpoints that your server will implement, including HTTP methods, paramete
     ]
     ```
 
-- GET "/resources/:id" -> details for a specific provider (what is shown on toggle in accordian)
-    - Returns 200 if successful, 404 if id not found
-    - Example response:
-
 - GET "/resources/:type" -> returns a list of resources for a specific type of healthcare (eg. transgender care, mental health resources, queer-friendly GPs, etc.)
-    - Returns 200 if succssful, 
+    - Returns 200 if succssful, 404 if resource_type not found
     - Example response:
+    ```
+    [
+        {
+            id: 1,
+            resource_type: "Primary Care",
+            type_providers: ["Sherbourne Health", "Woman's College Hospital", ...]
+        },
+        {
+            id: 2,
+            resource_type: "Transition Related Surgeries",
+            type_providers: ["Woman's College Hospital", ...]
+        },
+        ...{}, ... {}
+    ]
+    ```
 
-### Auth ❌
+### Auth
 - An additional functionality, should there be reasonable time to implement, will be a user account feature through which users can login in and bookmark their locations. This will be stored in server/api memory and therefore remain indefinitely for the user to access.
-- Describe how authentication/authorization will be implemented. ❌
+- Describe how authentication/authorization will be implemented.
 
 
 ## Roadmap 
