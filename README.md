@@ -3,7 +3,7 @@
 
 
 ## Overview
-Queer Health Hub is a resource for those part of the 2SLGBTQIA++ community to access information, healthcare, and community within their city. Starting with the city of Toronto, the app will pin locations, queer friendly and safe establishments at which individuals can access healthcare and health-related information.  
+Queer Health Hub is a resource for those part of the 2SLGBTQIA++ community to access information, healthcare, and community within their city. Starting with the city of Toronto, the app will pin locations, queer friendly and safe establishments, at which individuals can access healthcare and health-related information.  
 
 ### Problem
 Getting access to quality, safe healthcare as a queer person is very hard to do. Oftentimes recommendations are word of mouth, requiring individuals to be active within their circles or know the right people in order to get the care they require. In order to increase healthcare access for those part of the 2SLGBTQIA++ community, I am creating this app as a hub for all things healthcare related. Information regarding resources, procedures, providers, and locations will be centralized into one spot for the user to browse freely. 
@@ -14,9 +14,9 @@ I would also like to have special considerations for the Indigenous community, e
 This app is built on the foundations of intersectionality, consent-based care, and queer safety. 
 
 ### Features
-The user will be directed to the landing page at app start. On the mobile site, the user will be able to read a description of the app and then choose between searching for a specific resource or navigating to a different page (map view, list view, or more details about site). On the desktop site, the user will see all functionality within the one page. 
+The user will be directed to the landing page at app start. On the mobile site, the user will be able to read a description of the app and then choose between searching for a specific resource or navigating to a different page (map view, list view, or more details about site). On the desktop site, the user will see all functionality within the one page with the option to navigate to a list only view, a map only view, or further details about the app, app creator, and future directions. 
 
-**From left to right are the following three sections:**
+**From left to right are the following three sections on desktop width:**
 1. **Site Information:** The site information will include the logo, about, and search bar.
 2. **Map View:** The middle section will be a map where the user can see pins of the resources.
 3. **Resource View:** The resource view will include a resource details card, an emergency services information card, and a legend for the map and site. 
@@ -28,8 +28,9 @@ The user will be directed to the landing page at app start. On the mobile site, 
 List technologies that will be used in your app, including any libraries to save time or provide more functionality. Be sure to research any potential limitations.
 - VS Code
 - GitHub
-- MySQL (maybe) *️⃣
+- MySQL
 - npm *️⃣ (do you want us to list additional packages within npm that we will be using (eg. express, cors, uuid, etc)?)
+- @mui/base
 
 ### APIs
 - [Google Maps API](https://developers.google.com/maps/documentation)
@@ -62,18 +63,74 @@ The **desktop site** will be one screen split into three sections (from left to 
 ![Desktop page wireframe](./proposal/images/capstone_desktop.png)
 
 ### Data 
-The data comes in three general types:
-1. Map location
-2. Provider/resource location
-3. Provider/resource details. 
+The data comes in two general types:
+1. Map details (include map location)
+2. Provider/resource details (including provider/resource locatio)
 The location of the provider/resource will be determined and pinned to the map. Users can click on this pin and see additional details for the provider/resource. The map data relies on the Google Maps API and the map pin location of the provider relies on the address/location in the self-created database. 
 
 ### Endpoints ❌
 List endpoints that your server will implement, including HTTP methods, parameters, and example responses.
-- GET / provider location
-- GET /:id provider details
-- GET /:type returns a list of resources for a specific type of healthcare (eg. transgender care, mental health resources, queer-friendly gps, etc.)
-- GET / Google Maps data
+- GET "/" -> list of all provider/resource locations, seen in map view
+    - Returns 200 if successful
+    - Example response:
+    ```
+    [
+        {
+            id: 1,
+            resource_name: Sherbourne Health,
+            resource_address: 333 Sherbourne Street
+        },
+        {
+            id: 2,
+            resource_name: Woman's College Hospital,
+            resource_address: 76 Grenville Street
+        },
+        ...{}, ... {}
+    ]
+    ```
+
+- GET "/resources" -> list of all provider names and type, accordian style (expansion shows provider details/further information on the provider)
+    - Returns 200 if successful, 400 if 
+    - Example response:
+    ```
+    [
+        {
+            id: 1,
+            resource_name: Sherbourne Health
+            resource_type: ["Primary Care", "Mental Health", "Trans Health Care", "Post-Surgical Support", "Information & Knowledge"],
+            resource_treatment_options: 
+            resource_website: "https://sherbourne.on.ca/",
+            resource_address: "333 Sherbourne Street",
+            resource_phone: "416-324-4100",
+            resource_email: "info@sherbourne.on.ca",
+            resource_hours: "Monday, Tuesday, Wednesday: 9 a.m.- 8 p.m; Thursday: 9 a.m.- 1 p.m & 4 – 8 p.m; Friday: 9 a.m. – 5 p.m; Saturday: 9 a.m. – 12 p.m.",
+            resource_navigation_accessibility: ["Subway", "Streetcar", "Bus", "Walking"],
+            resource_accessible:
+        },
+        {
+            id: 2,
+            resource_name: Woman's College Hospital,
+            resource_type: ["Sexual Health", "Endocrinology", "Primary Care", "Indigenous Health", "Gynecology", "Mental Health"]
+            resource_treatment_options: ["Gender Transition Encodrinology Care", "Mastectomy", "Chest Contouring", "Breast Augmentation", Hysterectomy", "Bilateral Salpingo-oopherectomy", "Orchiectomy", "Scrotectomy", "Vaginoplasty", "Vulvaplasty"]
+            resource_website: "https://www.womenscollegehospital.ca/",
+            resource_address: 76 Grenville Street,
+            resource_phone: 416-323-6400,
+            resource_email: "",
+            resource_hours: "Department Dependent",
+            resource_navigation_accessibility: ["Subway", "Streetcar", "Bus", "Walking"],
+            resource_accessible: "Yes",
+        },
+        ...{}, ... {}
+    ]
+    ```
+
+- GET "/resources/:id" -> details for a specific provider (what is shown on toggle in accordian)
+    - Returns 200 if successful, 404 if id not found
+    - Example response:
+
+- GET "/resources/:type" -> returns a list of resources for a specific type of healthcare (eg. transgender care, mental health resources, queer-friendly GPs, etc.)
+    - Returns 200 if succssful, 
+    - Example response:
 
 ### Auth ❌
 - An additional functionality, should there be reasonable time to implement, will be a user account feature through which users can login in and bookmark their locations. This will be stored in server/api memory and therefore remain indefinitely for the user to access.
