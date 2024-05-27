@@ -30,10 +30,12 @@ The user will be directed to the landing page at app start. On the mobile site, 
 - MySQL
 - npm
 - react-router-dom
+- sass
 - express
 - nodemon
 - cors
 - dotenv
+- knex
 - axios
 - @mui/base
 
