@@ -65,7 +65,7 @@ The **desktop site** will be one screen split into three sections (from left to 
 
 **Desktop Width:**
 
-![Desktop page wireframe](./proposal/images/capstone_desktop.png)
+![Desktop page wireframe](./assets/mockups/capstone_desktop.png)
 
 ### Data 
 The data comes in two general types:
