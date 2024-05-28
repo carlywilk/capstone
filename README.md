@@ -3,15 +3,13 @@
 
 
 ## Overview
-Queer Health Hub is a resource for those part of the 2SLGBTQIA++ community to access information, healthcare, and community within their city. Starting with the city of Toronto, the app will pin locations, queer friendly and safe establishments, at which individuals can access healthcare and health-related information.  
+Queer Health Hub is a local resource for 2SLGBTQIA++ people in the City of Toronto that provides access to information on resources and healthcare service providers. 
 
 ### Problem
-Getting access to quality, safe healthcare as a queer person is very hard to do. Oftentimes recommendations are word of mouth, requiring individuals to be active within their circles or know the right people in order to get the care they require. In order to increase healthcare access for those part of the 2SLGBTQIA++ community, I am creating this app as a hub for all things healthcare related. Information regarding resources, procedures, providers, and locations will be centralized into one spot for the user to browse freely. 
+2SLGBTQIA++ people experience more barriers accessing quality and safe healthcare. QHH aims to bridge this care gap by helping users navigate their local healthcare system. Information regarding resources, procedures, providers, and locations will be centralized into one spot for the user to browse freely. 
 
 ### User Profile
-My goal demographic is the queer community and anyone within the 2SLGBTQIA++ acronym. I would especially like this app to be a safe and outstanding space for those in the transgender or intersex communities as anti-trans rhetoric continues to unfortunately blossom within our society at present time. 
-I would also like to have special considerations for the Indigenous community, ensuring I provide accurate information and gateways to resources, but also ensuring that non-Western forms of medicine are also taken into consideration and highlighted within the app. 
-This app is built on the foundations of intersectionality, consent-based care, and queer safety. 
+The primary demographic is the Queer and gender expansive community and anyone within the 2SLGBTQIA++ acronym. Specifically, this app aims to be a safe space for those in the transgender or intersex communities as anti-trans rhetoric has rapidly increased. The app will also list Indigenous and non-Western forms of medicine. The Queer Health Hub app is built on the foundations of intersectionality, consent-based care, and queer safety. 
 
 ### Features
 The user will be directed to the landing page at app start. On the mobile site, the user will be able to read a description of the app and then choose between searching for a specific resource or navigating to a different page (map view, list view, or more details about site). On the desktop site, the user will see all functionality within the one page with the option to navigate to a list only view, a map only view, or further details about the app, app creator, and future directions. 
@@ -60,10 +58,10 @@ The **desktop site** will be one screen split into three sections (from left to 
 ### Mockups
 **Mobile Width:**
 
-![Mobile landing page wireframe](./proposal/images/capstone_mobile_landing.png)
-![Mobile map view page wireframe](./proposal/images/capstone_mobile_map.png)
-![Mobile list view page wireframe](./proposal/images/capstone_mobile_list.png)
-![Mobile about details page wireframe](./proposal/images/capstone_mobile_about.png)
+![Mobile landing page wireframe](./assets/mockups/capstone_mobile_landing.png)
+![Mobile map view page wireframe](./assets/mockups/capstone_mobile_map.png)
+![Mobile list view page wireframe](./assets/mockups/capstone_mobile_list.png)
+![Mobile about details page wireframe](./assets/mockups/capstone_mobile_about.png)
 
 **Desktop Width:**
 
