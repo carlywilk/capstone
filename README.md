@@ -1,6 +1,6 @@
 # Project Title
 **Queer Health Hub (QHH)**
-![QHH Logo](./assets/logo/e5.png)
+![QHH Logo](./src/assets/logo/e5.png)
 
 ## Overview
 Queer Health Hub is a local resource for 2SLGBTQIA++ people in the City of Toronto that aims to increase access to information, resources, and healthcare service providers. 
@@ -62,17 +62,17 @@ The **desktop site** will be one screen split into three sections (from left to 
 ### Mockups
 **Mobile Width:**
 
-![Mobile landing page wireframe](./assets/mockups/capstone_mobile_landing.png)
-![Mobile map view page wireframe](./assets/mockups/capstone_mobile_map.png)
-![Mobile list view page wireframe](./assets/mockups/capstone_mobile_list.png)
-![Mobile about details page wireframe](./assets/mockups/capstone_mobile_about.png)
+![Mobile landing page wireframe](./src/assets/mockups/capstone_mobile_landing.png)
+![Mobile map view page wireframe](./src/assets/mockups/capstone_mobile_map.png)
+![Mobile list view page wireframe](./src/assets/mockups/capstone_mobile_list.png)
+![Mobile about details page wireframe](./src/assets/mockups/capstone_mobile_about.png)
 
 **Desktop Width:**
 
-![Desktop landing page wireframe](./assets/mockups/capstone_desktop.png)
-![Desktop map only view wireframe](./assets/mockups/capstone_desktop_map.png)
-![Desktop list only view wireframe](./assets/mockups/capstone_desktop_list.png)
-![Desktop about only wireframe](./assets/mockups/capstone_desktop_about.png)
+![Desktop landing page wireframe](./src/assets/mockups/capstone_desktop.png)
+![Desktop map only view wireframe](./src/assets/mockups/capstone_desktop_map.png)
+![Desktop list only view wireframe](./src/assets/mockups/capstone_desktop_list.png)
+![Desktop about only wireframe](./src/assets/mockups/capstone_desktop_about.png)
 
 ### Data 
 The data comes in two general types:
