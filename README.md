@@ -3,16 +3,16 @@
 
 
 ## Overview
-Queer Health Hub is a local resource for 2SLGBTQIA++ people in the City of Toronto that provides access to information on resources and healthcare service providers. 
+Queer Health Hub is a local resource for 2SLGBTQIA++ people in the City of Toronto that aims to increase access to information, resources, and healthcare service providers. 
 
 ### Problem
-2SLGBTQIA++ people experience more barriers accessing quality and safe healthcare. QHH aims to bridge this care gap by helping users navigate their local healthcare system. Information regarding resources, procedures, providers, and locations will be centralized into one spot for the user to browse freely. 
+2SLGBTQIA++ people experience more barriers accessing quality and safe healthcare. QHH aims to close this care gap by helping users navigate their local healthcare systems. Information regarding resources, procedures, providers, and locations will be centralized into one spot for the user to browse freely. 
 
 ### User Profile
-The primary demographic is the Queer and gender expansive community and anyone within the 2SLGBTQIA++ acronym. Specifically, this app aims to be a safe space for those in the transgender or intersex communities as anti-trans rhetoric has rapidly increased. The app will also list Indigenous and non-Western forms of medicine. The Queer Health Hub app is built on the foundations of intersectionality, consent-based care, and queer safety. 
+The primary demographic is the Queer and gender expansive community and anyone within the 2SLGBTQIA++ acronym. Particularly, this app aims to be a safe and caring space for those in the transgender and intersex communities as anti-trans rhetoric continues to rapidly grow. The app will also list Indigenous and non-Western forms of medicine. The Queer Health Hub app is built on the foundations of intersectionality, consent-based care, and queer safety. 
 
 ### Features
-The user will be directed to the landing page at app start. On the mobile site, the user will be able to read a description of the app and then choose between searching for a specific resource or navigating to a different page (map view, list view, or more details about site). On the desktop site, the user will see all functionality within the one page with the option to navigate to a list only view, a map only view, or further details about the app, app creator, and future directions. 
+The user will be directed to the landing page at app start. On the mobile site, the user will be able to read a description of the app and then choose between searching for a specific resource or navigating to a different page (map view, list view, or more details about site). On the desktop site, the user will see all functionality within the one page with the additional option to navigate to a list only view, a map only view, or further details about the app, app creator, and future directions. 
 
 **From left to right are the following three sections on desktop width:**
 1. **Site Information:** The site information will include the logo, about, and search bar.
@@ -38,7 +38,7 @@ The user will be directed to the landing page at app start. On the mobile site, 
 - @mui/base
 
 ### APIs
-- [Google Maps API](https://developers.google.com/maps/documentation)
+- [Google Maps API](https://developers.google.com/maps/documentation) or the [Mapbox API](https://docs.mapbox.com/api/overview/)
 - Queer Healthcare Database (self-created seed file)
 
 ### Sitemap
@@ -50,10 +50,14 @@ The **mobile site** will have the following pages:
 - List View Page
 - More Details Page
 
-The **desktop site** will be one screen split into three sections (from left to right):
-- Site title and information
-- Map View Section
-- Resource Information Section
+The **desktop site** will be one screen split into three sections (from left to right) with additional pages for the map only view, list only view, and about details:
+- Desktop Home Page:
+    - Site title and information
+    - Map View Section
+    - Resource Information Section
+- Mav View Only Page
+- List View Only Page
+- About Only Page
 
 ### Mockups
 **Mobile Width:**
@@ -65,7 +69,10 @@ The **desktop site** will be one screen split into three sections (from left to 
 
 **Desktop Width:**
 
-![Desktop page wireframe](./assets/mockups/capstone_desktop.png)
+![Desktop landing page wireframe](./assets/mockups/capstone_desktop.png)
+![Desktop map only view wireframe](./assets/mockups/capstone_desktop_map.png)
+![Desktop list only view wireframe](./assets/mockups/capstone_desktop_list.png)
+![Desktop about only wireframe](./assets/mockups/capstone_desktop_about.png)
 
 ### Data 
 The data comes in two general types:
