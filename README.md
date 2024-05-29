@@ -1,6 +1,6 @@
 # Project Title
 **Queer Health Hub (QHH)**
-
+![QHH Logo](./assets/logo/e5.png)
 
 ## Overview
 Queer Health Hub is a local resource for 2SLGBTQIA++ people in the City of Toronto that aims to increase access to information, resources, and healthcare service providers. 
@@ -38,7 +38,7 @@ The user will be directed to the landing page at app start. On the mobile site, 
 - @mui/base
 
 ### APIs
-- [Google Maps API](https://developers.google.com/maps/documentation) or the [Mapbox API](https://docs.mapbox.com/api/overview/)
+- [Google Maps API](https://developers.google.com/maps/documentation) or [Mapbox API](https://docs.mapbox.com/api/overview/)
 - Queer Healthcare Database (self-created seed file)
 
 ### Sitemap
@@ -55,7 +55,7 @@ The **desktop site** will be one screen split into three sections (from left to 
     - Site title and information
     - Map View Section
     - Resource Information Section
-- Mav View Only Page
+- Map View Only Page
 - List View Only Page
 - About Only Page
 
@@ -81,7 +81,7 @@ The data comes in two general types:
 The location of the provider/resource will be determined and pinned to the map. Users can click on this pin and see additional details for the provider/resource. The map data relies on the Google Maps API and the map pin location of the provider relies on the address/location in the self-created database. 
 
 ### Endpoints
-List endpoints that your server will implement, including HTTP methods, parameters, and example responses.
+Endpoints that my server will implement:
 - GET "/" -> list of all provider/resource locations, seen in map view
     - Returns 200 if successful
     - Example response:
@@ -162,15 +162,14 @@ List endpoints that your server will implement, including HTTP methods, paramete
     ```
 
 ### Auth
-- An additional functionality, should there be reasonable time to implement, will be a user account feature through which users can login in and bookmark their locations. This will be stored in server/api memory and therefore remain indefinitely for the user to access.
-- Describe how authentication/authorization will be implemented.
+- An additional functionality, should there be reasonable time to implement, will be a user account feature through which users can login and bookmark their locations. This will be stored in server/api memory and therefore remain indefinitely for the user to access.
 
 
 ## Roadmap 
 **MONDAY, MAY 13 TO SATURDAY, JUNE 2, 2024: PROJECT PLANNING**
-- [ ] Write proposal __(BY: May 28, 2024)__
-- [ ] Create mockups and style guide __(BY: May 28, 2024)__
-- [ ] Submit proposal __(DUE: May 28, 2024)__
+- [x] Write proposal __(BY: May 28, 2024)__
+- [x] Create mockups and style guide __(BY: May 28, 2024)__
+- [x] Submit proposal __(DUE: May 28, 2024)__
 - [ ] Asset procurement and mapping (eg. logo, images, icons, fonts) __(BY: May 31, 2024)__
 - [ ] Component, page, and routes mapping __(BY: June 2, 2024)__
 - [ ] Resource research and database creation __(BY: June 2, 2024)__
