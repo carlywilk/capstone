@@ -1,0 +1,119 @@
+@use "./colors" as *;
+
+@font-face {
+    font-family: "JetBrains";
+    src: url("../../assets/fonts/JetBrainsMono-Light.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JetBrains";
+    src: url("../../assets/fonts/JetBrainsMono-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JetBrains";
+    src: url("../../assets/fonts/JetBrainsMono-Bold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JetBrains";
+    src: url("../../assets/fonts/JetBrainsMono-ExtraBold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+$JetBrains-Light: 200;
+$JetBrains-Regular: 400;
+$JetBrains-Bold: 600;
+$JetBrains-ExtraBold: 800;
+
+@mixin mh1 {
+    font-size: 1.75rem;
+    font-weight: $JetBrains-ExtraBold;
+    // color: ;
+    @content;
+}
+
+@mixin mh2 {
+    font-size: 1.5rem;
+    font-weight: $JetBrains-Bold;
+    // color: ;
+    @content;
+}
+
+@mixin mh3 {
+    font-size: 1rem;
+    font-weight: $JetBrains-Bold;
+    // color: ;
+    @content;
+}
+
+@mixin mp1 {
+    font-size: 1rem;
+    font-weight: $JetBrains-Regular;
+    // color: ;
+    @content;
+}
+
+@mixin mp2 {
+    font-size: 0.75rem;
+    font-weight: $JetBrains-Regular;
+    // color: ;
+    @content;
+}
+
+@mixin mp3 {
+    font-size: 0.5rem;
+    font-weight: $JetBrains-Light;
+    // color: ;
+    @content;
+}
+
+
+@mixin h1 {
+    font-size: 2.25rem;
+    font-weight: $JetBrains-ExtraBold;
+    // color: ;
+    @content;
+}
+
+@mixin h2 {
+    font-size: 2rem;
+    font-weight: $JetBrains-Bold;
+    // color: ;
+    @content;
+}
+
+@mixin h3 {
+    font-size: 1.75rem;
+    font-weight: $JetBrains-Bold;
+    // color: ;
+    @content;
+}
+
+@mixin p1 {
+    font-size: 1.5rem;
+    font-weight: $JetBrains-Regular;
+    // color: ;
+    @content;
+}
+
+@mixin p2 {
+    font-size: 1.25rem;
+    font-weight: $JetBrains-Regular;
+    // color: ;
+    @content;
+}
+
+@mixin p3 {
+    font-size: 1rem;
+    font-weight: $JetBrains-Light;
+    // color: ;
+    @content;
+}

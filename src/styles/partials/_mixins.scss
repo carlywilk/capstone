@@ -1,0 +1,10 @@
+
+
+@mixin mobile-margins {
+    margin: 0 1rem;
+}
+
+@mixin desktop-margins {
+    margin: 0 auto;
+    max-width: 75rem;
+}
