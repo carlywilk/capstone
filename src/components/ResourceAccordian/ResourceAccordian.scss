@@ -3,3 +3,14 @@
 @use "../../styles/partials/global" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
+
+.accordion {
+
+    &__header {
+        @include mh2;
+    }
+
+    &__content {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
