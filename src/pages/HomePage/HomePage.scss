@@ -4,7 +4,14 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
 
-.title {
-    margin: 1rem auto;
-    text-align: center;
+.landing {
+    @include mobile-background;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+        width: 100%;
+    }
 }

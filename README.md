@@ -36,6 +36,7 @@ The user will be directed to the landing page at app start. On the mobile site, 
 - knex
 - axios
 - @mui/base
+- @vis.gl/react-google-maps
 
 ### APIs
 - [Google Maps API](https://developers.google.com/maps/documentation) or [Mapbox API](https://docs.mapbox.com/api/overview/)
