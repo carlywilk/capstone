@@ -34,6 +34,7 @@ $JetBrains-Bold: 600;
 $JetBrains-ExtraBold: 800;
 
 @mixin mh1 {
+    font-family: "JetBrains", Arial, Helvetica, sans-serif;
     font-size: 1.75rem;
     font-weight: $JetBrains-ExtraBold;
     // color: ;
@@ -41,6 +42,7 @@ $JetBrains-ExtraBold: 800;
 }
 
 @mixin mh2 {
+    font-family: "JetBrains", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     font-weight: $JetBrains-Bold;
     // color: ;
@@ -48,6 +50,7 @@ $JetBrains-ExtraBold: 800;
 }
 
 @mixin mh3 {
+    font-family: "JetBrains", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: $JetBrains-Bold;
     // color: ;
@@ -55,6 +58,7 @@ $JetBrains-ExtraBold: 800;
 }
 
 @mixin mp1 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: $JetBrains-Regular;
     // color: ;
@@ -62,21 +66,15 @@ $JetBrains-ExtraBold: 800;
 }
 
 @mixin mp2 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.75rem;
     font-weight: $JetBrains-Regular;
     // color: ;
     @content;
 }
 
-@mixin mp3 {
-    font-size: 0.5rem;
-    font-weight: $JetBrains-Light;
-    // color: ;
-    @content;
-}
-
-
 @mixin h1 {
+    font-family: "JetBrains", Arial, Helvetica, sans-serif;
     font-size: 2.25rem;
     font-weight: $JetBrains-ExtraBold;
     // color: ;
@@ -84,6 +82,7 @@ $JetBrains-ExtraBold: 800;
 }
 
 @mixin h2 {
+    font-family: "JetBrains", Arial, Helvetica, sans-serif;
     font-size: 2rem;
     font-weight: $JetBrains-Bold;
     // color: ;
@@ -91,6 +90,7 @@ $JetBrains-ExtraBold: 800;
 }
 
 @mixin h3 {
+    font-family: "JetBrains", Arial, Helvetica, sans-serif;
     font-size: 1.75rem;
     font-weight: $JetBrains-Bold;
     // color: ;
@@ -98,6 +98,7 @@ $JetBrains-ExtraBold: 800;
 }
 
 @mixin p1 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     font-weight: $JetBrains-Regular;
     // color: ;
@@ -105,6 +106,7 @@ $JetBrains-ExtraBold: 800;
 }
 
 @mixin p2 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
     font-weight: $JetBrains-Regular;
     // color: ;
@@ -112,6 +114,7 @@ $JetBrains-ExtraBold: 800;
 }
 
 @mixin p3 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: $JetBrains-Light;
     // color: ;

@@ -11,10 +11,12 @@ import "./HomePage.scss";
 export function HomePage() {
     return (
         <section className="landing">
-            <Header />
-            <AboutApp />
-            <SearchBar />
-            <img className="landing__logo" src={qhhLogo} alt="" />
+            <Header className="landing__header"/>
+            <AboutApp className="landing__about" />
+            <div className="landing__search">
+                <SearchBar />
+                <img className="landing__logo" src={qhhLogo} alt="" />
+            </div>
             <NavBar />
         </section>
     );

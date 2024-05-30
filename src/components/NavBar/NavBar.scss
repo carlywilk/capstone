@@ -2,4 +2,18 @@
 @use "../../styles//partials/colors.scss" as *;
 @use "../../styles/partials/global" as *;
 @use "../../styles/partials/mixins" as *;
-@use "../../styles/partials/typography" as *;
+
+.nav {
+    @include mobile-nav;
+
+    &__button {
+        @include mobile-button;
+        &:hover {
+            background-color: $basic-white;
+        }
+        &:active {
+            box-shadow: $basic-black 2px 2px 0 0;
+            transform: translate(2px, 2px);
+        }
+    }
+}

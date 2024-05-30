@@ -6,12 +6,21 @@
 
 .landing {
     @include mobile-background;
-    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
+
+    &__search {
+        @include content-box-styling;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &__logo {
+        padding: 0.25rem 1.75rem 0.5rem;
         width: 100%;
     }
 }

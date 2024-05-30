@@ -3,3 +3,13 @@
 @use "../../styles/partials/global" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
+
+.header {
+    margin: 1rem 0;
+    padding: 0.5rem 0.25rem;
+    @include content-box-styling;
+
+    &__title {
+        @include mh1;
+    }
+}

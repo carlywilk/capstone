@@ -6,6 +6,10 @@
     margin: 0 1rem;
 }
 
+@mixin mobile-content-margins {
+    margin-bottom: 1rem;
+}
+
 @mixin desktop-margins {
     margin: 0 auto;
     max-width: 75rem;
@@ -31,4 +35,42 @@
         linear-gradient(to bottom, $primary-yellowA 1px, $primary-green 1px);
     background-size: 2.5rem 2.5rem;
     background-position: center center;
+}
+
+@mixin mobile-nav {
+    padding: 0 1rem;
+    border-top: 3px solid $primary-yellow;
+    width: 100%;
+    height: 4.5rem;
+    background-color: $primary-green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+@mixin mobile-button {
+    background-color: $primary-white;
+    border: 2px solid $basic-black;
+    border-radius: 0.25rem;
+    box-shadow: $basic-black 4px 4px 0 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: $basic-black;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+@mixin desktop-nav {
+
+}
+
+@mixin content-box-styling {
+    background-color: $primary-white;
+    border: 2px solid $basic-black;
+    border-radius: 0.25rem;
+    box-shadow: $basic-black 4px 4px 0 0;
 }

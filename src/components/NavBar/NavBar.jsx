@@ -1,35 +1,23 @@
 import { Link } from "react-router-dom";
 import "./NavBar.scss";
 
+import testIcon from "../../assets/icons/family_star_24dp_FILL0_wght400_GRAD0_opsz24.png"
+
 export function NavBar() {
     return (
-        <nav>
-            <div className="nav">
-                <div className="nav__button">
-                    <Link>
-                        {/* <img className="nav__button-about" src="" alt="" /> */}
-                        <p>❤️</p>
-                    </Link>
-                </div>
-                <div className="nav__button">
-                    <Link>
-                        {/* <img className="nav__button-map" src="" alt="" /> */}
-                        <p>❤️</p>
-                    </Link>
-                </div>
-                <div className="nav__button">
-                    <Link>
-                        {/* <img className="nav__button-list" src="" alt="" /> */}
-                        <p>❤️</p>
-                    </Link>
-                </div>
-                <div className="nav__button">
-                    <Link>
-                        {/* <img className="nav__button-home" src="" alt="" /> */}
-                        <p>❤️</p>
-                    </Link>
-                </div>
-            </div>
+        <nav className="nav">
+            <Link className="nav__link" to="/about" >
+                <img className="nav__button" src="" alt="" />
+            </Link>
+            <Link className="nav__link" to="/map" >
+                <img className="nav__button" src="" alt="" />
+            </Link>
+            <Link className="nav__link" to="/list" >
+                <img className="nav__button" src="" alt="" />
+            </Link>
+            <Link className="nav__link" to="/" >
+                <img className="nav__button" src="" alt="" />
+            </Link>
         </nav>
     );
 }
