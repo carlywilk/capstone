@@ -1,0 +1,10 @@
+@use "../../styles/partials/breakpoints.scss" as *;
+@use "../../styles//partials/colors.scss" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.title {
+    margin: 1rem auto;
+    text-align: center;
+}
