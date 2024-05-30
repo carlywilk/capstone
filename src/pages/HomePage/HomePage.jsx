@@ -5,18 +5,32 @@ import { SearchBar } from "../../components/SearchBar/SearchBar.jsx";
 import { NavBar } from "../../components/NavBar/NavBar.jsx";
 
 import qhhLogo from "../../assets/logo/e5.png";
+import qhhLogo2 from "../../assets/logo/e2.png"
 
 import "./HomePage.scss";
 
+//option 1
+// export function HomePage() {
+//     return (
+//         <section className="landing">
+//             <Header className="landing__header"/>
+//             <AboutApp className="landing__about" />
+//             <div className="landing__search">
+//                 <SearchBar />
+//                 <img className="landing__logo" src={qhhLogo} alt="" />
+//             </div>
+//             <NavBar />
+//         </section>
+//     );
+// }
+
+// option 2
 export function HomePage() {
     return (
         <section className="landing">
-            <Header className="landing__header"/>
-            <AboutApp className="landing__about" />
-            <div className="landing__search">
-                <SearchBar />
-                <img className="landing__logo" src={qhhLogo} alt="" />
-            </div>
+            <Header />
+            <AboutApp />
+            <SearchBar />
             <NavBar />
         </section>
     );

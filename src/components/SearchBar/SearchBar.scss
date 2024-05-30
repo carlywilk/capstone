@@ -4,12 +4,22 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
 
+// option 1
+// .search {
+//     margin: 0.5rem 0;
+//     padding: 0.35rem 0.5rem;
+//     border: 2px solid $basic-black;
+//     border-radius: 1rem;
+//     background-color: $basic-white;
+//     height: 2rem;
+//     width: 100%;
+//     @include mp1;
+// }
+
+// option 2
 .search {
-    margin: 0.5rem 0;
+    @include content-box-styling;
     padding: 0.35rem 0.5rem;
-    border: 2px solid $basic-black;
-    border-radius: 1rem;
-    background-color: $basic-white;
     height: 2rem;
     width: 100%;
     @include mp1;
