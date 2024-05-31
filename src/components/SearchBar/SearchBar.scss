@@ -20,7 +20,20 @@
 .search {
     @include content-box-styling;
     padding: 0.35rem 0.5rem;
+    background: {
+        image: url("../../assets/icons/search_24dp_FILL0_wght400_GRAD0_opsz24.svg");
+        repeat: no-repeat;
+        position: right 0 center;
+    }
     height: 2rem;
     width: 100%;
     @include mp1;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+::placeholder {
+    color: $basic-black;
 }

@@ -6,10 +6,12 @@ import "./ListViewPage.scss";
 
 export function ListViewPage() {
     return (
-        <section className="list">
-            <Header />
-            <ResourceAccordian />
+        <>
+            <section className="list">
+                <Header />
+                <ResourceAccordian />
+            </section>
             <NavBar />
-        </section>
+        </>
     );
 }

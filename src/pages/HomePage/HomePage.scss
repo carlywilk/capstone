@@ -30,8 +30,8 @@
 // option 2
 .landing {
     @include mobile-background;
+    padding: 1rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 1rem;
 }
