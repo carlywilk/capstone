@@ -13,4 +13,9 @@
     &__title {
         @include mh1;
     }
+
+    @include desktop {
+        margin: 0 0 1rem;
+        width: 18rem;
+    }
 }

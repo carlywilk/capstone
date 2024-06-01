@@ -13,4 +13,9 @@
     &__icon {
     font-size: 0.5rem;
     }
+
+    @include desktop {
+        width: 95%;
+        // height: 80%;
+    }
 }

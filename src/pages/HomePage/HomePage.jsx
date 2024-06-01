@@ -1,6 +1,11 @@
 
-import { Header } from "../../components/Header/Header.jsx";
 import { AboutApp } from "../../components/AboutApp/AboutApp.jsx";
+import { Emergency } from "../../components/Emergency/Emergency.jsx";
+import { Header } from "../../components/Header/Header.jsx";
+import { MapLegend } from "../../components/MapLegend/MapLegend.jsx";
+import { ResourceCard } from "../../components/ResourceCard/ResourceCard.jsx";
+import { ResourceMap } from "../../components/ResourceMap/ResourceMap.jsx";
+import { Sidebar } from "../../components/Sidebar/Sidebar.jsx";
 import { SearchBar } from "../../components/SearchBar/SearchBar.jsx";
 import { NavBar } from "../../components/NavBar/NavBar.jsx";
 
@@ -28,10 +33,24 @@ import "./HomePage.scss";
 export function HomePage() {
     return (
         <section className="landing">
-            <Header />
-            <AboutApp />
-            <SearchBar />
-            <NavBar />
+            <section className="landing__mobile">
+                <Header />
+                <AboutApp />
+                <SearchBar />
+                <NavBar />
+            </section>
+            <section className="landing__desktop">
+                <Sidebar />
+                {/* <NavBar /> */}
+                <div className="landing__desktop-main">
+                    <ResourceMap />
+                </div>
+                <div className="landing__desktop-resources">
+                    <ResourceCard />
+                    <Emergency />
+                    <MapLegend />
+                </div>
+            </section>
         </section>
     );
 }

@@ -4,7 +4,7 @@
 @use "../../styles/partials/mixins" as *;
 
 .nav {
-    @include mobile-nav;
+    @include navigation;
 
     &__button {
         @include mobile-button;
@@ -15,5 +15,11 @@
             box-shadow: $basic-black 2px 2px 0 0;
             transform: translate(2px, 2px);
         }
+    }
+
+    @include desktop {
+        // @include desktop-nav;
+        // border-right: 3px solid $primary-yellow;
+        // width: 25%;
     }
 }

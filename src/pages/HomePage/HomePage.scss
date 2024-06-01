@@ -30,8 +30,37 @@
 // option 2
 .landing {
     @include mobile-background;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
+    &__mobile {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__desktop {
+        display: none;
+    }
+
+    @include desktop {
+
+        &__mobile {
+            display: none;
+        }
+
+        &__desktop {
+            margin: 0 auto;
+            max-width: 80rem;
+            display: flex;
+            // align-items: center;
+        }
+
+        &__desktop-main {
+            width: 50%;
+            
+        }
+
+        &__desktop-resources {
+            width: 25%;
+        }
+    }
 }

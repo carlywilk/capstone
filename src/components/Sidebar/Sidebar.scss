@@ -3,3 +3,16 @@
 @use "../../styles/partials/global" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
+
+.sidebar {
+    display: none;
+    @include desktop {
+        padding: 1rem;
+        // border-right: 3px solid $primary-yellow;
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        // height: 100vh;
+        // background-color: $primary-green;
+    }
+}
