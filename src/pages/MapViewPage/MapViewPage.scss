@@ -7,4 +7,16 @@
 .map-page {
     @include mobile-background;
     padding: 1rem;
+
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        &__header-mobile {
+            display: none;
+        }
+
+        &__nav-mobile {
+            display: none;
+        }
+    }
 }

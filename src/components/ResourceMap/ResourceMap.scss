@@ -7,8 +7,11 @@
 
 .map {
     margin: 1rem auto;
-    width: 40rem;
-    height: 40rem;
+    border: 2px solid $basic-black;
+    border-radius: 0.25rem;
+    box-shadow: $basic-black 4px 4px 0 0;
+    width: 99%;
+    height: 60vh;
     
     &__icon {
     font-size: 0.5rem;
@@ -16,6 +19,7 @@
 
     @include desktop {
         width: 95%;
-        // height: 80%;
+        max-width: 80rem;
+        height: 80vh;
     }
 }

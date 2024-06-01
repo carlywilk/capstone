@@ -3,3 +3,11 @@
 @use "../../styles/partials/global" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
+
+.legend {
+
+    @include desktop {
+        @include content-box-styling;
+        padding: 0.75rem 0.5rem;
+    }
+}

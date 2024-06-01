@@ -60,6 +60,10 @@
         }
 
         &__desktop-resources {
+            margin: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             width: 25%;
         }
     }
