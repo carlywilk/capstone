@@ -4,13 +4,13 @@ import { NavBar } from "../../components/NavBar/NavBar.jsx";
 
 import "./ListViewPage.scss";
 
-export function ListViewPage() {
+export function ListViewPage({ resourceList }) {
 
     return (
         <>
             <section className="list">
                 <Header />
-                <ResourceAccordian />
+                <ResourceAccordian resourceList={resourceList} />
             </section>
             <NavBar />
         </>
