@@ -6,17 +6,55 @@
 
 .map-page {
     @include mobile-background;
-    padding: 1rem;
-
     @include desktop {
+        @include desktop-background;
+    }
+
+    &__main {
         display: flex;
-        justify-content: space-between;
-        &__header-mobile {
-            display: none;
+        flex-direction: column;
+
+        @include desktop {
+            margin: 0 auto;
+            padding-top: 3.5rem;
+            max-width: 80rem;
+            flex-direction: row;
+        }
+    }
+
+    &__sidebar {
+
+
+        @include desktop {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
-        &__nav-mobile {
+        &--padded {
+            padding: 1rem;
+
+            @include desktop {
+                padding: 0;
+            }
+        }
+
+        &--hide {
             display: none;
+
+            @include desktop {
+                display: flex;
+            }
+        }
+    }
+
+    &__map {
+        padding: 0 1rem 1rem 1rem;
+
+        @include desktop {
+            padding: 0;
+            width: 75%;
         }
     }
 }
