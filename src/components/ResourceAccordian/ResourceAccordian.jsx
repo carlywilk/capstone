@@ -10,9 +10,6 @@ export function ResourceAccordian({ resourceList }) {
 
     const [expanded, setExpanded] = useState(null);
 
-    // const handleChange = (isExpanded, panel) => {
-    //     setExpanded(isExpanded ? panel : false);
-    // }
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : null);
     }
