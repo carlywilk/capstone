@@ -1,9 +1,8 @@
 "use client";
-import { useEffect, useState, useRef } from 'react';
+import { useState } from 'react';
 import { 
     APIProvider,
     Map,
-    useMap,
     AdvancedMarker,
     Pin,
     InfoWindow
