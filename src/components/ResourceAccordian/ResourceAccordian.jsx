@@ -1,5 +1,6 @@
+import { useEffect, useState } from "react";
 
-import { useState } from 'react';
+import { ResourcesApi } from "../../utils/classes/ResourcesApiClass.jsx";
 
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -10,10 +11,25 @@ import "./ResourceAccordian.scss";
 export function ResourceAccordian() {
 
     const [expanded, setExpanded] = useState(false);
+    const [resourceList, setResourceList] = useState([]);
 
     const handleChange = (isExpanded, panel) => {
         setExpanded(isExpanded ? panel : false);
     }
+
+    useEffect(() => {
+        const fetchResourcesData = async () => {
+            const resourcesApi = new ResourcesApi();
+            try {
+                const resourcesResponse = await resourcesApi.getResourceList();
+                setResourceList(resourcesResponse.data);
+                console.log(resourcesResponse)
+            } catch (error) {
+                console.error("Resources list not loaded");
+            }
+        }
+        fetchResourcesData();
+    }, [setResourceList])
 
     return (
         <>
@@ -31,7 +47,11 @@ export function ResourceAccordian() {
                 }}
                 >
                     <AccordionSummary>
-                            <h2 className="accordion__header">Accordian 1</h2>
+                    {resourceList.length > 0 ? (
+                            <h2 className="accordion__header">{resourceList[0].resource_name}</h2>
+                        ) : (
+                            <h2 className="accordion__header">Loading...</h2>
+                        )}
                     </AccordionSummary>
                         <AccordionDetails className="accordion__content">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi distinctio consequatur perspiciatis odit sint laudantium maiores est ipsa ad dicta, laborum aperiam quae quibusdam. Nisi, velit dolore. Culpa, tempore sequi.</p>
