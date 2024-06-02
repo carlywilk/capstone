@@ -8,60 +8,33 @@ import {
     Pin,
     InfoWindow
 } from '@vis.gl/react-google-maps';
-// import { MarkerClusterer } from '@googlemaps/markerclusterer';
-// import { Marker } from '@googlemaps/markerclusterer';
-
-// import customMarker from "../../assets/icons/family_star_24dp_FILL0_wght400_GRAD0_opsz24.png";
 
 import "./ResourceMap.scss";
 
-// const googleMapsApiKey = process.env.REACT_APP_GOOGLE_API_KEY;
-
-// const mapId = process.env.REACT_APP_GOOGLE_MAP_ID;
-
 const places = [
-    { id: 1, lat: 43.68080172103611, lng: -79.41683302824372 },
-    { id: 2, lat: 43.67210063224841, lng: -79.40019847096802},
-    { id: 3, lat: 43.65895068477414, lng: -79.41280732582267}
+    { id: 1, lat: 43.68080172103611, lng: -79.41683302824372 }, // 1383 Bathurst
+    { id: 2, lat: 43.66191187865744, lng: -79.38733411845752}, // WCH
+    { id: 3, lat: 43.662574638569616, lng: -79.3722748896215} // Sherbourne Health
 ];
 
 const position = { lat: 43.68080172103611, lng: -79.41683302824372 };
 
 export function ResourceMap() {
 
-
-    // const [open, setOpen] = useState(false);
-
     return (
         <main className="map">
             <APIProvider apiKey={process.env.REACT_APP_GOOGLE_API_KEY}>
                 <Map
                     mapId={process.env.REACT_APP_GOOGLE_MAP_ID}
-                    // zoom={10}
+                    defaultZoom={12}
                     center={position}
-                    gestureHandling={'greedy'}
+                    // gestureHandling={"cooperative"}
+                    streetViewControl={false}
+                    fullscreenControl={false}
+                    scrollwheel={true}
                     disableDefaultUI={true}
                     >
-
                     <Markers points={places} />
-
-                    {/* <AdvancedMarker
-                        position={position}
-                        onClick={() => setOpen(true)}    
-                    >
-                            <Pin 
-                                background={"grey"}
-                                borderColor={"green"}
-                                glyphColor={"purple"}
-                            />
-                        </AdvancedMarker>
-                    
-                    {open && <InfoWindow 
-                        position={position}
-                        onCloseClick={() => setOpen(false)}
-                    >
-                        <p>I'm in Toronto</p>    
-                    </InfoWindow>} */}
                 </Map>
             </APIProvider>
         </main>
@@ -69,19 +42,25 @@ export function ResourceMap() {
 }
 
 const Markers = ({ points }) => {
-
     const [open, setOpen] = useState(false);
+    const [clickPosition, setClickedPosition] = useState(null);
 
     return <>
         {points.map(point => <AdvancedMarker 
             key={point.key}
             position={point}
-            onClick={() => setOpen(true)}
+            onClick={() => {
+                setOpen(true)
+                setClickedPosition(point)
+                }}
             >
-            <span className="map__icon" >❤️</span>
+                <Pin 
+                    background={"#d81159ff"}
+                    glyphColor={"#FFF5E1"}
+                />
         </AdvancedMarker>)}
-        {open && <InfoWindow
-            position={position}
+        {open && clickPosition && <InfoWindow
+            position={clickPosition}
             onCloseClick={() => setOpen(false)}
             > <p>I'm in Toronto</p>
         </InfoWindow>}
