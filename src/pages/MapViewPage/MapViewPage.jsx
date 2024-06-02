@@ -13,9 +13,9 @@ export function MapViewPage() {
                 <section className="map-page__sidebar">
                     <div className="map-page__sidebar--padded">
                         <Header />
-                    <div className="list__sidebar--hide">
-                        <AboutApp />
-                    </div>
+                        <div className="list__sidebar--hide">
+                            <AboutApp />
+                        </div>
                     <SearchBar />
                     </div>
                     <NavBar />
