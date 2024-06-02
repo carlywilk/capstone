@@ -21,7 +21,6 @@ function App() {
         try {
             const resourcesResponse = await resourcesApi.getResourceList();
             setResourceList(resourcesResponse.data);
-            console.log(resourcesResponse)
         } catch (error) {
             console.error("Resources list not loaded");
         }
