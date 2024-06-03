@@ -11,14 +11,16 @@ import { NavBar } from "../../components/NavBar/NavBar.jsx";
 
 import "./HomePage.scss";
 
-export function HomePage() {
+export function HomePage({ resourceList }) {
+    // console.log(resourceList);
 
     const [selectedMarker, setSelectedMarker] = useState(null);
     const [markerInfo, setMarkerInfo] = useState(null);
 
     const handMarkerClick = (marker) => {
         setSelectedMarker(marker);
-        setMarkerInfo(marker);
+        const clickedResource = marker ? resourceList.find(resource => resource.id === marker.id) : null;
+        setMarkerInfo(clickedResource);
     };
 
     return (
@@ -43,7 +45,7 @@ export function HomePage() {
                         markerInfo={markerInfo}
                         />
                     <Emergency />
-                    <MapLegend />
+                    {/* <MapLegend /> */}
                 </section>
             </main>
         </section>

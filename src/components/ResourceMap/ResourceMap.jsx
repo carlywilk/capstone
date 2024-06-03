@@ -59,6 +59,8 @@ export function ResourceMap({
                         {selectedMarker && (
                             <InfoWindow
                                 position={selectedMarker}
+                                // onCloseClick={() => onMarkerClick(null)}
+                                // onCloseClick={() => onMarkerClick(selectedMarker)}
                                 onCloseClick={() => onMarkerClick(null)}
                             >
                                 <Link to="/list" >
