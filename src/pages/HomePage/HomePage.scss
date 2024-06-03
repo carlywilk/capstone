@@ -38,6 +38,13 @@
                 padding: 0;
             }
         }
+
+        &--hide {
+
+            @include desktop {
+                display: none;
+            }
+        }
     }
 
     &__map {

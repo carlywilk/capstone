@@ -22,4 +22,10 @@
         max-width: 80rem;
         height: 80vh;
     }
+
+    &__modal {
+        @include desktop {
+            display: none;
+        }
+    }
 }

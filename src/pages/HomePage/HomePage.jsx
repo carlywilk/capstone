@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 import { AboutApp } from "../../components/AboutApp/AboutApp.jsx";
 import { Emergency } from "../../components/Emergency/Emergency.jsx";
@@ -11,17 +11,23 @@ import { NavBar } from "../../components/NavBar/NavBar.jsx";
 
 import "./HomePage.scss";
 
-export function HomePage({ resourceList }) {
+export function HomePage({
+    resourceList,
+    selectedMarker,
+    onMarkerClick,
+    markerInfo
+    }) {
+
     // console.log(resourceList);
 
-    const [selectedMarker, setSelectedMarker] = useState(null);
-    const [markerInfo, setMarkerInfo] = useState(null);
+    // const [selectedMarker, setSelectedMarker] = useState(null);
+    // const [markerInfo, setMarkerInfo] = useState(null);
 
-    const handMarkerClick = (marker) => {
-        setSelectedMarker(marker);
-        const clickedResource = marker ? resourceList.find(resource => resource.id === marker.id) : null;
-        setMarkerInfo(clickedResource);
-    };
+    // const handMarkerClick = (marker) => {
+    //     setSelectedMarker(marker);
+    //     const clickedResource = marker ? resourceList.find(resource => resource.id === marker.id) : null;
+    //     setMarkerInfo(clickedResource);
+    // };
 
     return (
         <section className="landing">
@@ -32,12 +38,15 @@ export function HomePage({ resourceList }) {
                         <AboutApp />
                         <SearchBar />
                     </div>
-                    <NavBar />
+                    <div className="landing__sidebar--hide">
+                        <NavBar />
+                    </div>
                 </section>
                 <section className="landing__map">
                     <ResourceMap 
+                        resourceList={resourceList}
                         selectedMarker={selectedMarker}
-                        onMarkerClick={handMarkerClick}
+                        onMarkerClick={onMarkerClick}
                     />
                 </section>
                 <section className="landing__resource">

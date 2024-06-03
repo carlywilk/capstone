@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+// import { useState } from 'react';
 import { 
     APIProvider,
     Map,
@@ -9,6 +9,8 @@ import {
 } from '@vis.gl/react-google-maps';
 
 import { Link } from 'react-router-dom';
+
+import { ResourceModal } from '../ResourceModal/ResourceModal.jsx';
 
 import "./ResourceMap.scss";
 
@@ -56,16 +58,18 @@ export function ResourceMap({
                                 />
                             </AdvancedMarker>
                         ))}
+                        
                         {selectedMarker && (
                             <InfoWindow
                                 position={selectedMarker}
-                                // onCloseClick={() => onMarkerClick(null)}
-                                // onCloseClick={() => onMarkerClick(selectedMarker)}
                                 onCloseClick={() => onMarkerClick(null)}
                             >
-                                <Link to="/list" >
+                                {/* <Link to="/list" >
                                     <p className="map__card-link">Details here</p>
-                                </Link>
+                                </Link> */}
+                                <div className="map__modal">
+                                    <ResourceModal />
+                                </div>
                             </InfoWindow>
                         )}
                     {/* <Markers points={places} /> */}

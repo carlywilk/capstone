@@ -6,6 +6,8 @@
 
 .map-page {
     @include mobile-background;
+    height: 70rem;
+
     @include desktop {
         @include desktop-background;
     }

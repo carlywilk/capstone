@@ -12,8 +12,6 @@ export function ResourceCard({
     markerInfo,
     }) {
 
-    console.log(markerInfo);
-
     return (
         <div className="resource-card">
             {markerInfo ? (
@@ -21,18 +19,18 @@ export function ResourceCard({
                     <h3 className="resource-card__title">{markerInfo.resource_name}</h3>
 
                     <div className="resource-card__info-container">
-                        <img className="resource-card__icon" href={addressIcon} alt="" />
-                        <p className="resource-card__address">{markerInfo.resource_address}</p>
+                        <img className="resource-card__icon" src={addressIcon} alt="" />
+                        <p className="resource-card__content">{markerInfo.resource_address}</p>
                     </div>
 
                     <div className="resource-card__info-container">
-                        <img className="resource-card__icon" href={phoneIcon} alt="" />
-                        <p className="resource-card__phone">{markerInfo.resource_phone}</p>
+                        <img className="resource-card__icon" src={phoneIcon} alt="" />
+                        <p className="resource-card__content">{markerInfo.resource_phone}</p>
                     </div>
 
                     <div className="resource-card__info-container">
-                        <img className="resource-card__icon" href={emailIcon} alt="" />
-                        <p className="resource-card__phone">{markerInfo.resource_email}</p>
+                        <img className="resource-card__icon" src={emailIcon} alt="" />
+                        <p className="resource-card__content">{markerInfo.resource_email}</p>
                     </div>
 
                     {/* <div className="resource-card__info-container">
@@ -45,7 +43,7 @@ export function ResourceCard({
                     </a>
                 </div>
             ) : (
-                <p>No marker selected</p>
+                <p className="resource-card__title--padding">No marker selected</p>
             )}
         </div>
     );
