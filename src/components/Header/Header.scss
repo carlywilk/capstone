@@ -9,6 +9,12 @@
     padding: 0.5rem 0.25rem;
     width: 100%;
     @include content-box-styling;
+    text-decoration: none;
+
+    &__link {
+        text-decoration: none;
+        color: $basic-black;
+    }
 
     &__title {
         @include mh1;
