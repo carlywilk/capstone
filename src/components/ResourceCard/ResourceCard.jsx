@@ -1,4 +1,11 @@
 
+import addressIcon from "../../assets/icons/location_city_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+import websiteIcon from "../../assets/icons/link_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+import phoneIcon from "../../assets/icons/call_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+import emailIcon from "../../assets/icons/mail_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+// import accessibleIcon from "../../assets/icons/accessible_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+// import notAccessibleIcon from "../../assets/icons/not_accessible_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+
 import "./ResourceCard.scss";
 
 export function ResourceCard({
@@ -12,11 +19,30 @@ export function ResourceCard({
             {markerInfo ? (
                 <div>
                     <h3 className="resource-card__title">{markerInfo.resource_name}</h3>
-                    <p className="resource-card__address">{markerInfo.resource_address}</p>
-                    <p className="resource-card__website">{markerInfo.resource_website}</p>
-                    <p className="resource-card__phone">{markerInfo.resource_phone}</p>
-                    <p className="resource-card__email">{markerInfo.resource_email}</p>
-                    <p className="resource-card__access">{markerInfo.is_accessible}</p>
+
+                    <div className="resource-card__info-container">
+                        <img className="resource-card__icon" href={addressIcon} alt="" />
+                        <p className="resource-card__address">{markerInfo.resource_address}</p>
+                    </div>
+
+                    <div className="resource-card__info-container">
+                        <img className="resource-card__icon" href={phoneIcon} alt="" />
+                        <p className="resource-card__phone">{markerInfo.resource_phone}</p>
+                    </div>
+
+                    <div className="resource-card__info-container">
+                        <img className="resource-card__icon" href={emailIcon} alt="" />
+                        <p className="resource-card__phone">{markerInfo.resource_email}</p>
+                    </div>
+
+                    {/* <div className="resource-card__info-container">
+                        <img className="resource-card__icon" href={accessibleIcon} alt="" />
+                        <p className="resource-card__access">{markerInfo.is_accessible}</p>
+                    </div> */}
+
+                    <a className="resource-card__link" href={markerInfo.resource_website}>
+                        <img className="resource-card__icon" src={websiteIcon} alt="two links connected together, links to resource website" />
+                    </a>
                 </div>
             ) : (
                 <p>No marker selected</p>
