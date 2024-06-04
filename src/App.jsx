@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import { ResourcesApi } from "./utils/classes/ResourcesApiClass.jsx";
+import { ServicesApi } from './utils/classes/ServicesApiClass.jsx';
 
 import { HomePage } from "./pages/HomePage/HomePage.jsx";
 import { AboutPage } from "./pages/AboutPage/AboutPage.jsx";
@@ -15,6 +16,8 @@ function App() {
   const [resourceList, setResourceList] = useState([]);
   const [selectedMarker, setSelectedMarker] = useState(null);
   const [markerInfo, setMarkerInfo] = useState(null);
+
+  const [serviceList, setServiceList] = useState([]);
 
   const handMarkerClick = (marker) => {
       setSelectedMarker(marker);
@@ -33,7 +36,20 @@ function App() {
         }
     }
     fetchResourcesData();
-}, [setResourceList])
+  }, [setResourceList])
+
+  useEffect(() => {
+    const fetchServicesData = async () => {
+      const servicesApi = new ServicesApi();
+      try {
+        const servicesResponse = await servicesApi.getServicesList();
+        setServiceList(servicesResponse.data);
+      } catch (error) {
+        console.error("Service list not loaded")
+      }
+    }
+    fetchServicesData();
+  }, [setServiceList])
 
   return (
     <BrowserRouter>
@@ -43,6 +59,7 @@ function App() {
                                   selectedMarker={selectedMarker}
                                   onMarkerClick={handMarkerClick}
                                   markerInfo={markerInfo}
+                                  serviceList={serviceList}
                                 />} />
         <Route path="/about" element={<AboutPage
                                         resourceList={resourceList}
@@ -52,9 +69,11 @@ function App() {
                                       selectedMarker={selectedMarker}
                                       onMarkerClick={handMarkerClick}
                                       markerInfo={markerInfo}
+                                      serviceList={serviceList}
                                     />} />
         <Route path="/list" element={<ListViewPage
                                       resourceList={resourceList}
+                                      serviceList={serviceList}
                                     />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
