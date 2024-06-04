@@ -1,6 +1,7 @@
 # Project Title
 **Queer Health Hub (QHH)**
-![QHH Logo](./src/assets/logo/e5.png)
+<!-- ![QHH Logo](./src/assets/logo/e5.png) -->
+<img src="./src/assets/logo/e5.png" width="100">
 
 ## Overview
 Queer Health Hub is a local resource for 2SLGBTQIA++ people in the City of Toronto that aims to increase access to information, resources, and healthcare service providers. 
@@ -21,6 +22,7 @@ The user will be directed to the landing page at app start. On the mobile site, 
 
 
 ## Implementation
+Server API Repo found [here](https://github.com/carlywilk/capstone-api.git)
 
 ### Tech Stack 
 - VS Code
@@ -39,7 +41,7 @@ The user will be directed to the landing page at app start. On the mobile site, 
 - @vis.gl/react-google-maps
 
 ### APIs
-- [Google Maps API](https://developers.google.com/maps/documentation) or [Mapbox API](https://docs.mapbox.com/api/overview/)
+- [Google Maps API](https://developers.google.com/maps/documentation)
 - Queer Healthcare Database (self-created seed file)
 
 ### Sitemap
@@ -171,11 +173,11 @@ Endpoints that my server will implement:
 - [x] Write proposal __(BY: May 28, 2024)__
 - [x] Create mockups and style guide __(BY: May 28, 2024)__
 - [x] Submit proposal __(DUE: May 28, 2024)__
-- [ ] Asset procurement and mapping (eg. logo, images, icons, fonts) __(BY: May 31, 2024)__
-- [ ] Component, page, and routes mapping __(BY: June 2, 2024)__
+- [x] Asset procurement and mapping (eg. logo, images, icons, fonts) __(BY: May 31, 2024)__
+- [x] Component, page, and routes mapping __(BY: June 2, 2024)__
 - [ ] Resource research and database creation __(BY: June 2, 2024)__
-- [ ] Plan styling, partials, and breakpoints __(BY: June 2, 2024)__
-- [ ] API mapping and Postman testing for public API __(BY: June 2, 2024)__
+- [x] Plan styling, partials, and breakpoints __(BY: June 2, 2024)__
+- [x] API mapping and Postman testing for public API __(BY: June 2, 2024)__
 
 **SUNDAY, JUNE 2 TO SUNDAY, JUNE 9, 2024: PROJECT CREATION**
 - [ ] Code and style base HTML, components __(BY: June 3, 2024)__
