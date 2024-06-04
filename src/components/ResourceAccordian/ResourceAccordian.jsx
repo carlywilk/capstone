@@ -4,6 +4,11 @@ import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 
+import addressIcon from "../../assets/icons/location_city_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+import websiteIcon from "../../assets/icons/link_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+import phoneIcon from "../../assets/icons/call_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+import emailIcon from "../../assets/icons/mail_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+
 import "./ResourceAccordian.scss";
 
 export function ResourceAccordian({ resourceList }) {
@@ -38,8 +43,26 @@ export function ResourceAccordian({ resourceList }) {
                                 <h2 className="accordion__header">Loading...</h2>
                             )}
                         </AccordionSummary>
-                            <AccordionDetails className="accordion__content">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi distinctio consequatur perspiciatis odit sint laudantium maiores est ipsa ad dicta, laborum aperiam quae quibusdam. Nisi, velit dolore. Culpa, tempore sequi.</p>
+                            <AccordionDetails className="accordion__content-container">
+                                <div className="accordion__info-container">
+                                    <img className="accordion__icon" src={addressIcon} alt="address" />
+                                    <p className="accordion__content">{resource.resource_address}</p>
+                                </div>
+                                <div className="accordion__info-container">
+                                    <img className="accordion__icon" src={phoneIcon} alt="phone" />
+                                    <p className="accordion__content">{resource.resource_phone}</p>
+                                </div>
+                                <div className="accordion__info-container">
+                                    <img className="accordion__icon" src={emailIcon} alt="email" />
+                                    <p className="accordion__content">{resource.resource_email}</p>
+                                </div>
+                                {/* <div className="accordion__info-container">
+                                    <img className="accordion__icon" src="" alt="accessible" />
+                                    <p className="accordion__content"></p>
+                                </div> */}
+                                <a className="accordion__link" href={resource.resource_website}>
+                                    <img className="accordion__icon" src={websiteIcon} alt="" />
+                                </a>
                             </AccordionDetails>
                 </Accordion>
             ))}

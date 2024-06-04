@@ -58,20 +58,19 @@ export function ResourceMap({
                                 />
                             </AdvancedMarker>
                         ))}
-                        
-                        {selectedMarker && (
+                        {/* {selectedMarker && (
                             <InfoWindow
                                 position={selectedMarker}
                                 onCloseClick={() => onMarkerClick(null)}
                             >
-                                {/* <Link to="/list" >
+                                <Link to="/list" >
                                     <p className="map__card-link">Details here</p>
-                                </Link> */}
+                                </Link>
                                 <div className="map__modal">
                                     <ResourceModal />
                                 </div>
                             </InfoWindow>
-                        )}
+                        )} */}
                     {/* <Markers points={places} /> */}
                 </Map>
             </APIProvider>

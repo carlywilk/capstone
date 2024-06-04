@@ -32,6 +32,7 @@ export function ListViewPage({ resourceList }) {
                 <section className="list__resources">
                     <ResourceAccordian resourceList={sortedResourceList} />
                 </section>
+                <h2 className="list__resources--hide">Page under construction</h2>
             </main>
         </section>
     )

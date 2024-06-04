@@ -46,10 +46,11 @@ export function MapViewPage({
                         onMarkerClick={onMarkerClick}
                     />
                 </section>
-                {/* <section className="map-page__resource">
+                <section className="map-page__resource">
                     <ResourceCard markerInfo={markerInfo} />
-                    <ResourceModal />
-                </section> */}
+                    {/* <ResourceModal /> */}
+                </section>
+                <h2 className="map-page--hide">Page under construction</h2>
             </main>
         </section>
     )

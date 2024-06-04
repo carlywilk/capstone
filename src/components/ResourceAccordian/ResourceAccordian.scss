@@ -7,10 +7,27 @@
 .accordion {
 
     &__header {
-        @include mh2;
+        @include mh3;
+    }
+
+    &__content-container {
+
+    }
+
+    &__info-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icon {
+
     }
 
     &__content {
-        font-family: Arial, Helvetica, sans-serif;
+        @include mp2;
+    }
+
+    &__link {
+
     }
 }

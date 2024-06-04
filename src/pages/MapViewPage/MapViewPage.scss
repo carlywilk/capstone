@@ -55,7 +55,23 @@
         padding: 0 1rem 1rem 1rem;
 
         @include desktop {
-            padding: 0;
+            display: none;
+            // padding: 0;
+            // width: 75%;
+        }
+    }
+
+    &__resource {
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &--hide {
+        display: none;
+        @include desktop {
+            display: flex;
+            padding: 0 0 0 2rem;
             width: 75%;
         }
     }
