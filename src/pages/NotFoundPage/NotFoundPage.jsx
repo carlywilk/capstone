@@ -12,13 +12,13 @@ export function NotFoundPage() {
 
     const navigate = useNavigate();
 
-    // useEffect(() => {
-    //     const redirectDelay = setTimeout(() => {
-    //         navigate("/");
-    //     }, 4000);
+    useEffect(() => {
+        const redirectDelay = setTimeout(() => {
+            navigate("/");
+        }, 4000);
 
-    //     return () => clearTimeout(redirectDelay);
-    // }, [navigate]);
+        return () => clearTimeout(redirectDelay);
+    }, [navigate]);
 
     return (
         <section className="not-found">
