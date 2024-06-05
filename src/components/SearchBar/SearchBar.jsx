@@ -1,15 +1,24 @@
-import searchIcon from "../../assets/icons/search_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+import { useState } from "react";
+
 import "./SearchBar.scss";
 
 export function SearchBar() {
+
+    const [searchItem, setSearchItem] = useState("");
+
+    const handleInputChange = (event) => {
+        const searchTerm = event.target.value;
+        setSearchItem(searchTerm);
+    }
+
     return (
         <>
             <input
                 type="text"
-                // name="search-form"
-                // id="search-form"
                 className="search"
                 placeholder="Search"
+                value={searchItem}
+                onChange={handleInputChange}
             />
         </>
     );

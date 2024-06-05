@@ -8,5 +8,11 @@
     @include mobile-content-margins;
     padding: 0.75rem 0.5rem;
     @include content-box-styling;
-    @include mp1;
+
+    &__content {
+        @include mp1;
+        @include desktop {
+            @include p2;
+        }
+    }
 }

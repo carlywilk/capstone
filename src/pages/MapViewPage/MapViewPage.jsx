@@ -4,7 +4,7 @@ import { AboutApp } from "../../components/AboutApp/AboutApp.jsx";
 import { Header } from "../../components/Header/Header.jsx";
 import { ResourceCard } from "../../components/ResourceCard/ResourceCard.jsx";
 import { ResourceMap } from "../../components/ResourceMap/ResourceMap.jsx";
-import { ResourceModal } from "../../components/ResourceModal/ResourceModal.jsx";
+// import { ResourceModal } from "../../components/ResourceModal/ResourceModal.jsx";
 import { SearchBar } from "../../components/SearchBar/SearchBar.jsx";
 import { NavBar } from "../../components/NavBar/NavBar.jsx";
 
@@ -14,7 +14,8 @@ export function MapViewPage({
     resourceList,
     selectedMarker,
     onMarkerClick,
-    markerInfo
+    markerInfo,
+    servicesList
     }) {
 
     // const [selectedMarker, setSelectedMarker] = useState(null);
@@ -47,7 +48,10 @@ export function MapViewPage({
                     />
                 </section>
                 <section className="map-page__resource">
-                    <ResourceCard markerInfo={markerInfo} />
+                    <ResourceCard 
+                        markerInfo={markerInfo}
+                        servicesList={servicesList}
+                    />
                     {/* <ResourceModal /> */}
                 </section>
                 <h2 className="map-page--hide">Page under construction</h2>

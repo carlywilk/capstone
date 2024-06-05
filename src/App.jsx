@@ -71,6 +71,7 @@ function App() {
                                       selectedMarker={selectedMarker}
                                       onMarkerClick={handMarkerClick}
                                       markerInfo={markerInfo}
+                                      servicesList={servicesList}
                                     />} />
         <Route path="/list" element={<ListViewPage
                                       resourceList={resourceList}
