@@ -10,6 +10,7 @@ import "./ResourceCard.scss";
 
 export function ResourceCard({
     markerInfo,
+    servicesList
     }) {
 
     return (
@@ -37,6 +38,17 @@ export function ResourceCard({
                         <img className="resource-card__icon" href={accessibleIcon} alt="" />
                         <p className="resource-card__access">{markerInfo.is_accessible}</p>
                     </div> */}
+
+                    <div className="resource-card__services-container">
+                        <h3 className="resource-card__services-title">Services Offered:</h3>
+                        {servicesList.map((service, index) => (
+                            <p 
+                                key={index}
+                                className="resource-card__services"
+                            >
+                                {service.service_type}</p>
+                        ))}
+                    </div>
 
                     <a className="resource-card__link" href={markerInfo.resource_website}>
                         <img className="resource-card__icon" src={websiteIcon} alt="two links connected together, links to resource website" />

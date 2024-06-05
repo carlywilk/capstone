@@ -9,7 +9,7 @@ export class ResourcesApi {
         return await axios.get(`${this.serverUrl}/api/resources`);
     }
 
-    async getResourceDetails(id) {
-        return await axios.get(`${this.serverUrl}/api/resources/${id}`);
-    }
+    // async getResourceDetails(id) {
+    //     return await axios.get(`${this.serverUrl}/api/resources/${id}/ser`);
+    // }
 }

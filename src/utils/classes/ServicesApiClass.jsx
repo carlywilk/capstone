@@ -8,4 +8,8 @@ export class ServicesApi {
     async getServicesList() {
         return await axios.get(`${this.serverUrl}/api/services`);
     }
+
+    async getResourceServices(id) {
+        return await axios.get(`${this.serverUrl}/api/resources/${id}/services`)
+    }
 }

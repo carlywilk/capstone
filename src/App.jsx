@@ -14,10 +14,10 @@ import './App.scss';
 
 function App() {
   const [resourceList, setResourceList] = useState([]);
+  const [servicesList, setServicesList] = useState([]);
+  
   const [selectedMarker, setSelectedMarker] = useState(null);
   const [markerInfo, setMarkerInfo] = useState(null);
-
-  const [serviceList, setServiceList] = useState([]);
 
   const handMarkerClick = (marker) => {
       setSelectedMarker(marker);
@@ -39,17 +39,19 @@ function App() {
   }, [setResourceList])
 
   useEffect(() => {
-    const fetchServicesData = async () => {
-      const servicesApi = new ServicesApi();
-      try {
-        const servicesResponse = await servicesApi.getServicesList();
-        setServiceList(servicesResponse.data);
-      } catch (error) {
-        console.error("Service list not loaded")
-      }
+    const fetchServices = async () => {
+        const servicesApi = new ServicesApi();
+        try {
+            const response = await servicesApi.getResourceServices(markerInfo.id);
+            setServicesList(response.data);
+        } catch (error) {
+            console.error("Error fetching resource services", error);
+        }
     }
-    fetchServicesData();
-  }, [setServiceList])
+    if (markerInfo) {
+        fetchServices();
+    }
+}, [markerInfo]);
 
   return (
     <BrowserRouter>
@@ -59,7 +61,7 @@ function App() {
                                   selectedMarker={selectedMarker}
                                   onMarkerClick={handMarkerClick}
                                   markerInfo={markerInfo}
-                                  serviceList={serviceList}
+                                  servicesList={servicesList}
                                 />} />
         <Route path="/about" element={<AboutPage
                                         resourceList={resourceList}
@@ -69,11 +71,9 @@ function App() {
                                       selectedMarker={selectedMarker}
                                       onMarkerClick={handMarkerClick}
                                       markerInfo={markerInfo}
-                                      serviceList={serviceList}
                                     />} />
         <Route path="/list" element={<ListViewPage
                                       resourceList={resourceList}
-                                      serviceList={serviceList}
                                     />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
