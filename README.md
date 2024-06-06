@@ -63,7 +63,7 @@ npm start
 ```
 
 
-### API Reference
+## API Reference
 
 #### Get all resources
 ```
@@ -71,25 +71,23 @@ npm start
 ```
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+| `api_key` | `string` | **Required:** Your API key |
 
 #### Get one resource
 ```
   GET /api/resources/${id}
 ```
-| Parameter | Type     | Description                  |
-| :-------- | :------- | :--------------------------- |
-| `api_key` | `string` | **Required**. Your API key   |
-|           |          | **Required**. ID of resource |
+| Parameter | Type     | Description                                  |
+| :-------- | :------- | :------------------------------------------- |
+| `api_key` | `string` | **Required:** Your API key & ID of resource  |
 
 #### Get all services types for one resource
 ```
   GET /api/resources/${id}/services
 ```
-| Parameter | Type     | Description                  |
-| :-------- | :------- | :--------------------------- |
-| `api_key` | `string` | **Required**. Your API key   |
-|           |          | **Required**. ID of resource |
+| Parameter | Type     | Description                                  |
+| :-------- | :------- | :------------------------------------------- |
+| `api_key` | `string` | **Required:** Your API key & ID of resource  |
 
 
 ## Insights and Lessons Learned
