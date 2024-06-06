@@ -52,6 +52,9 @@
 
     &__content {
         padding: 0 1rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         @include desktop {
             padding: 0 0 0 1rem;
@@ -60,8 +63,7 @@
     }
 
     &__logo {
-        @include content-box-styling;
-        padding: 1rem;
+        padding: 2rem 1rem 1rem;
         width: 50%;
 
         @include desktop {

@@ -6,7 +6,7 @@
 
 .list {
     @include mobile-background;
-    height: 60rem;
+    height: 90rem;
 
     @include desktop {
         @include desktop-background;

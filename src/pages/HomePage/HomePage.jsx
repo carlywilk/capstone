@@ -42,9 +42,11 @@ export function HomePage({
                         markerInfo={markerInfo}
                         servicesList={servicesList}
                         />
-                    <Emergency />
                 </section>
             </main>
+            <div className="landing__emergency">
+                {/* <Emergency /> */}
+            </div>
         </section>
     )
 }

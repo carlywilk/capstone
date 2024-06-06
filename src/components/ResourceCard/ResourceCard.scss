@@ -19,7 +19,6 @@
         padding-bottom: 1rem;
 
         @include desktop {
-            // padding-bottom: 1rem;
             @include h3;
         }
 
@@ -36,10 +35,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include desktop {
-            // display: flex;
-            // justify-content: space-between;
-        }
     }
 
     &__icon {
@@ -71,9 +66,5 @@
             margin-bottom: 0.75rem;
             @include p3;
         }
-    }
-
-    &__link {
-
     }
 }

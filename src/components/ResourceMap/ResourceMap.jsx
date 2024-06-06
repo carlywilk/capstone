@@ -8,9 +8,9 @@ import {
     InfoWindow
 } from '@vis.gl/react-google-maps';
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-import { ResourceModal } from '../ResourceModal/ResourceModal.jsx';
+// import { ResourceModal } from '../ResourceModal/ResourceModal.jsx';
 
 import "./ResourceMap.scss";
 
@@ -24,6 +24,11 @@ const places = [
     { id: 7, lat: 43.64310049205079, lng: -79.42116537608366}, // CAMH
     { id: 8, lat: 43.660621683748666, lng: -79.3860264337501}, // Toronto Plastic Surgery
     { id: 9, lat: 43.65006404774825, lng: -79.36939147427779}, // 2-Spirited People of the 1st Nations
+    { id: 10, lat: 43.66667398942517, lng: -79.38107104544095}, // THE 519
+    { id: 11, lat: 43.662478115873796, lng: -79.37211763009694}, // Rainbow Health Ontario
+    { id: 12, lat: 43.6857116140509, lng: -79.32251557427611}, // Toronto Pflag
+    { id: 13, lat: 43.66994287413304, lng: -79.39749796078503}, // Planned Parenthood Toronto
+    { id: 15, lat: 43.652117615488805, lng: -79.39821304544161}, // Asian Community AIDS Services (ACAS)
 ];
 
 const mapCenter = { lat: 43.65702881311502, lng: -79.38428138643111 };
@@ -77,32 +82,3 @@ export function ResourceMap({
         </main>
     );
 }
-
-// const Markers = ({ points }) => {
-//     const [open, setOpen] = useState(false);
-//     const [clickPosition, setClickedPosition] = useState(null);
-
-//     return <>
-//         {points.map(point => <AdvancedMarker 
-//             key={places.id}
-//             position={point}
-//             onClick={() => {
-//                 setOpen(true)
-//                 setClickedPosition(point)
-//                 }}
-//             >
-//                 <Pin 
-//                     background={"#d81159ff"}
-//                     glyphColor={"#FFF5E1"}
-//                 />
-//         </AdvancedMarker>)}
-//         {open && clickPosition && <InfoWindow
-//             position={clickPosition}
-//             onCloseClick={() => setOpen(false)}
-//             >
-//                 <Link to="/list" >
-//                 <p className="map__card-link">Details here</p>
-//                 </Link>
-//         </InfoWindow>}
-//     </>
-// };

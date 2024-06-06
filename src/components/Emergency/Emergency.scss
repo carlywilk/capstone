@@ -7,4 +7,25 @@
 .emergency-card {
     @include content-box-styling;
     padding: 0.75rem 0.5rem;
+
+    &__title {
+        @include mh2;
+    }
+
+    &__content {
+        @include mp1;
+    }
+
+    &__content-container {
+
+    }
+
+    &__subtitle {
+        padding-top: 0.5rem;
+        @include mh3;
+    }
+
+    &__details {
+        @include mp1;
+    }
 }

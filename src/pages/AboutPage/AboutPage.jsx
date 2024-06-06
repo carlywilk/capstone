@@ -4,7 +4,7 @@ import { Header } from "../../components/Header/Header.jsx";
 import { SearchBar } from "../../components/SearchBar/SearchBar.jsx";
 import { NavBar } from "../../components/NavBar/NavBar.jsx";
 
-import qhhLogo from "../../assets/logo/e5.png";
+import qhhLogo from "../../assets/logo/e2.png";
 
 import "./AboutPage.scss";
 
@@ -23,7 +23,7 @@ export function AboutPage() {
                     <NavBar />
                 </section>
                 <section className="about-page__content">
-                    <AboutApp />
+                    {/* <AboutApp /> */}
                     <Emergency />
                     <img className="about-page__logo" src={qhhLogo} alt="letters Q, H, and H writtn in a smooth motion, with the two H characters sharing a middle line" />
                 </section>
