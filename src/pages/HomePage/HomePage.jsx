@@ -1,7 +1,7 @@
 
-import { AboutApp } from "../../components/AboutApp/AboutApp.jsx";
 import { Emergency } from "../../components/Emergency/Emergency.jsx";
 import { Header } from "../../components/Header/Header.jsx";
+import { HomeNav } from "../../components/HomeNav/HomeNav.jsx";
 import { ResourceCard } from "../../components/ResourceCard/ResourceCard.jsx";
 import { ResourceMap } from "../../components/ResourceMap/ResourceMap.jsx";
 import { SearchBar } from "../../components/SearchBar/SearchBar.jsx";
@@ -23,12 +23,14 @@ export function HomePage({
                 <section className="landing__sidebar">
                     <div className="landing__sidebar--padded">
                         <Header />
-                        <AboutApp />
                         <SearchBar />
                     </div>
                     <div className="landing__sidebar--hide">
                         <NavBar />
                     </div>
+                <section className="landing__home-nav">
+                    <HomeNav />
+                </section>
                 </section>
                 <section className="landing__map">
                     <ResourceMap 
@@ -45,7 +47,7 @@ export function HomePage({
                 </section>
             </main>
             <div className="landing__emergency">
-                {/* <Emergency /> */}
+                <Emergency />
             </div>
         </section>
     )

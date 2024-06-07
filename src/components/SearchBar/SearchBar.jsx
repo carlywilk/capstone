@@ -16,7 +16,7 @@ export function SearchBar() {
             <input
                 type="text"
                 className="search"
-                placeholder="Search"
+                placeholder="Search utility coming soon..."
                 value={searchItem}
                 onChange={handleInputChange}
             />

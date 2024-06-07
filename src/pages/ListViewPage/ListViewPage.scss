@@ -10,7 +10,7 @@
 
     @include desktop {
         @include desktop-background;
-        height: 100vh;
+        height: 80rem;
     }
 
     &__main {
@@ -22,6 +22,7 @@
             padding-top: 3.5rem;
             max-width: 78rem;
             flex-direction: row;
+            justify-content: space-between;
         }
     }
 
@@ -55,9 +56,10 @@
         padding: 0 1rem 1rem 1rem;
 
         @include desktop {
-            display: none;
+            padding: 0 13.5rem;
+            // display: none;
             // padding-left: 2rem;
-            // width: 75%;
+            // width: 50%;
         }
 
         &--hide {
@@ -67,6 +69,13 @@
                 padding-left: 2rem;
                 width: 75%;
             }
+        }
+    }
+
+    &__home-nav {
+
+        @include desktop {
+            margin-top: 6.25rem;
         }
     }
 }

@@ -8,6 +8,10 @@
 
     &__header {
         @include mh3;
+
+        @include desktop {
+            @include h4;
+        }
     }
 
     &__content-container {
@@ -21,10 +25,17 @@
 
     &__icon {
 
+        @include desktop {
+            width: 2rem;
+        }
     }
 
     &__content {
         @include mp2;
+
+        @include desktop {
+            @include p3;
+        }
     }
 
     &__link {

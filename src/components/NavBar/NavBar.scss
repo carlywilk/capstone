@@ -7,6 +7,10 @@
     @include navigation;
     z-index: 1;
 
+    @include desktop {
+        margin-top: 2rem;
+    }
+
     &__button {
         @include mobile-button;
         &:hover {
