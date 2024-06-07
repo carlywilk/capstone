@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 
 import { Header } from "../../components/Header/Header.jsx";
 import { HomeNav } from "../../components/HomeNav/HomeNav.jsx";
+import { NavBar } from "../../components/NavBar/NavBar.jsx";
 import { ResourceAccordian } from "../../components/ResourceAccordian/ResourceAccordian.jsx";
 import { SearchBar } from "../../components/SearchBar/SearchBar.jsx";
-import { NavBar } from "../../components/NavBar/NavBar.jsx";
 
 import "./ListViewPage.scss";
 
@@ -22,7 +22,6 @@ export function ListViewPage({ resourceList }) {
                 <section className="list__sidebar">
                     <div className="list__sidebar--padded">
                         <Header />
-                        
                         <SearchBar />
                         <div className="list__home-nav">
                             <HomeNav />

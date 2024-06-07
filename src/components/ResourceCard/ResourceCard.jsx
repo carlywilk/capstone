@@ -1,8 +1,7 @@
-
 import addressIcon from "../../assets/icons/location_city_24dp_FILL0_wght400_GRAD0_opsz24.svg";
-import websiteIcon from "../../assets/icons/link_24dp_FILL0_wght400_GRAD0_opsz24.svg";
-import phoneIcon from "../../assets/icons/call_24dp_FILL0_wght400_GRAD0_opsz24.svg";
 import emailIcon from "../../assets/icons/mail_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+import phoneIcon from "../../assets/icons/call_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+import websiteIcon from "../../assets/icons/link_24dp_FILL0_wght400_GRAD0_opsz24.svg";
 // import accessibleIcon from "../../assets/icons/accessible_24dp_FILL0_wght400_GRAD0_opsz24.svg";
 // import notAccessibleIcon from "../../assets/icons/not_accessible_24dp_FILL0_wght400_GRAD0_opsz24.svg";
 

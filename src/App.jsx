@@ -4,11 +4,12 @@ import { useState, useEffect } from 'react';
 import { ResourcesApi } from "./utils/classes/ResourcesApiClass.jsx";
 import { ServicesApi } from './utils/classes/ServicesApiClass.jsx';
 
+import { Footer } from './components/Footer/Footer.jsx';
 import { HomePage } from "./pages/HomePage/HomePage.jsx";
-import { MapViewPage } from "./pages/MapViewPage/MapViewPage.jsx";
 import { ListViewPage } from "./pages/ListViewPage/ListViewPage.jsx";
-import { UserPage } from "./pages/UserPage/UserPage.jsx";
+import { MapViewPage } from "./pages/MapViewPage/MapViewPage.jsx";
 import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage.jsx";
+import { UserPage } from "./pages/UserPage/UserPage.jsx";
 
 import './App.scss';
 
@@ -62,6 +63,7 @@ function App() {
         <Route path="/user" element={<UserPage /> } />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

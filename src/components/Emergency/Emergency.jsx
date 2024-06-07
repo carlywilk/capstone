@@ -1,4 +1,3 @@
-
 import "./Emergency.scss";
 
 export function Emergency() {
@@ -7,7 +6,7 @@ export function Emergency() {
             <h2 className="emergency-card__title">Emergency & Crisis Services</h2>
             <p className="emergency-card__content">For emergency health support, please dial 9-1-1 or go to your nearest emergency room.</p>
             <div className="emergency-card__contact-container">
-                <h3 className="emergency-card__subtitle">Suicie Crisis Helpline</h3>
+                <h3 className="emergency-card__subtitle">Suicide Crisis Helpline</h3>
                 <p className="emergency-card__details">9-8-8</p>
             </div>
             <div className="emergency-card__contact-container">

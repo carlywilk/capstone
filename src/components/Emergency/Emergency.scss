@@ -10,22 +10,45 @@
 
     &__title {
         @include mh2;
+
+        @include desktop {
+            @include h3;
+        }
     }
 
     &__content {
         @include mp1;
+
+        @include desktop {
+            @include p2;
+        }
     }
 
-    &__content-container {
+    &__contact-container {
+        display: flex;
+        flex-direction: column;
 
+        @include desktop {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 
     &__subtitle {
         padding-top: 0.5rem;
         @include mh3;
+
+        @include desktop {
+            @include h4;
+        }
     }
 
     &__details {
         @include mp1;
+
+        @include desktop {
+            @include p3;
+        }
     }
 }

@@ -1,11 +1,11 @@
 // import { useState } from "react";
 
 import { Header } from "../../components/Header/Header.jsx";
+import { NavBar } from "../../components/NavBar/NavBar.jsx";
 import { ResourceCard } from "../../components/ResourceCard/ResourceCard.jsx";
 import { ResourceMap } from "../../components/ResourceMap/ResourceMap.jsx";
 // import { ResourceModal } from "../../components/ResourceModal/ResourceModal.jsx";
 import { SearchBar } from "../../components/SearchBar/SearchBar.jsx";
-import { NavBar } from "../../components/NavBar/NavBar.jsx";
 
 import "./MapViewPage.scss";
 

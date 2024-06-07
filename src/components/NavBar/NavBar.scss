@@ -21,10 +21,4 @@
             transform: translate(2px, 2px);
         }
     }
-
-    @include desktop {
-        // @include desktop-nav;
-        // border-right: 3px solid $primary-yellow;
-        // width: 25%;
-    }
 }

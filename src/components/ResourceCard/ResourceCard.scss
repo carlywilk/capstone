@@ -46,7 +46,9 @@
     }
 
     &__content {
-        @include mp2;
+        @include mp1;
+        font-size: 0.85rem;
+
         @include desktop {
             @include p3;
         }
@@ -61,7 +63,9 @@
     }
 
     &__services {
-        @include mp2;
+        @include mp1;
+        font-size: 0.85rem;
+        
         @include desktop {
             margin-bottom: 0.75rem;
             @include p3;

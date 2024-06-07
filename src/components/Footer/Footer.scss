@@ -4,32 +4,17 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
 
-.accordion {
-
-    &__header {
-        @include mh3;
-
-        @include desktop {
-            @include h4;
-        }
-    }
-
-    &__info-container {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__icon {
-
-        @include desktop {
-            width: 2rem;
-        }
-    }
+.footer {
 
     &__content {
+        padding-bottom: 4.5rem;
+        border-top: 1px solid $primary-yellow;
+        background-color: $primary-green;
         @include mp2;
+        text-align: center;
 
         @include desktop {
+            padding-bottom: 0;
             @include p3;
         }
     }

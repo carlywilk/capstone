@@ -43,14 +43,6 @@
                 padding: 0;
             }
         }
-
-        &--hide {
-            display: none;
-
-            @include desktop {
-                display: none;
-            }
-        }
     }
 
     &__home-nav {
@@ -87,6 +79,13 @@
             margin: 2rem auto;
             width: 50%;
             // display: none;
+        }
+    }
+
+    &__nav-bar {
+
+        @include desktop {
+            display: none;
         }
     }
 }

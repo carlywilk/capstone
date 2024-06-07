@@ -1,11 +1,11 @@
-
 import { Emergency } from "../../components/Emergency/Emergency.jsx";
+import { Footer } from "../../components/Footer/Footer.jsx";
 import { Header } from "../../components/Header/Header.jsx";
 import { HomeNav } from "../../components/HomeNav/HomeNav.jsx";
+import { NavBar } from "../../components/NavBar/NavBar.jsx";
 import { ResourceCard } from "../../components/ResourceCard/ResourceCard.jsx";
 import { ResourceMap } from "../../components/ResourceMap/ResourceMap.jsx";
 import { SearchBar } from "../../components/SearchBar/SearchBar.jsx";
-import { NavBar } from "../../components/NavBar/NavBar.jsx";
 
 import "./HomePage.scss";
 
@@ -24,9 +24,6 @@ export function HomePage({
                     <div className="landing__sidebar--padded">
                         <Header />
                         <SearchBar />
-                    </div>
-                    <div className="landing__sidebar--hide">
-                        <NavBar />
                     </div>
                 <section className="landing__home-nav">
                     <HomeNav />
@@ -48,6 +45,9 @@ export function HomePage({
             </main>
             <div className="landing__emergency">
                 <Emergency />
+            </div>
+            <div className="landing__nav-bar">
+                <NavBar />
             </div>
         </section>
     )
