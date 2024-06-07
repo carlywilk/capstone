@@ -5,7 +5,6 @@ import { ResourcesApi } from "./utils/classes/ResourcesApiClass.jsx";
 import { ServicesApi } from './utils/classes/ServicesApiClass.jsx';
 
 import { HomePage } from "./pages/HomePage/HomePage.jsx";
-import { AboutPage } from "./pages/AboutPage/AboutPage.jsx";
 import { MapViewPage } from "./pages/MapViewPage/MapViewPage.jsx";
 import { ListViewPage } from "./pages/ListViewPage/ListViewPage.jsx";
 import { UserPage } from "./pages/UserPage/UserPage.jsx";
@@ -58,7 +57,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage resourceList={resourceList} selectedMarker={selectedMarker} onMarkerClick={handMarkerClick} markerInfo={markerInfo} servicesList={servicesList} />} />
-        <Route path="/about" element={<AboutPage resourceList={resourceList} />} />
         <Route path="/map" element={<MapViewPage resourceList={resourceList} selectedMarker={selectedMarker} onMarkerClick={handMarkerClick} markerInfo={markerInfo} servicesList={servicesList} />} />
         <Route path="/list" element={<ListViewPage resourceList={resourceList} />} />
         <Route path="/user" element={<UserPage /> } />

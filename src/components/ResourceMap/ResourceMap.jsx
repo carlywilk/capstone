@@ -31,7 +31,8 @@ const places = [
     { id: 15, lat: 43.652117615488805, lng: -79.39821304544161}, // Asian Community AIDS Services (ACAS)
 ];
 
-const mapCenter = { lat: 43.65702881311502, lng: -79.38428138643111 };
+// const mapCenter = { lat: 43.65702881311502, lng: -79.38428138643111 };
+const mapCenter = { lat: 43.669163391003174, lng: -79.37109629132236 };
 
 export function ResourceMap({
     selectedMarker,

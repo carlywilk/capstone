@@ -50,4 +50,11 @@
             margin: 2rem 0 0;
         }
     }
+
+    &--hide {
+
+        @include desktop {
+            display: none;
+        }
+    }
 }

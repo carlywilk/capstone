@@ -1,6 +1,5 @@
 // import { useState } from "react";
 
-import { AboutApp } from "../../components/AboutApp/AboutApp.jsx";
 import { Header } from "../../components/Header/Header.jsx";
 import { ResourceCard } from "../../components/ResourceCard/ResourceCard.jsx";
 import { ResourceMap } from "../../components/ResourceMap/ResourceMap.jsx";
@@ -34,7 +33,7 @@ export function MapViewPage({
                     <div className="map-page__sidebar--padded">
                         <Header />
                         <div className="list__sidebar--hide">
-                            <AboutApp />
+                            {/* <AboutApp /> */}
                         </div>
                     <SearchBar />
                     </div>
@@ -54,7 +53,7 @@ export function MapViewPage({
                     />
                     {/* <ResourceModal /> */}
                 </section>
-                <h2 className="map-page--hide">Page under construction</h2>
+                <h2 className="map-page--hide">To view map on desktop, please go to home page</h2>
             </main>
         </section>
     )

@@ -11,7 +11,7 @@ export function HomeNav() {
     return (
         <section className="home-nav">
             <section className="home-nav--rowOne">
-                <div className="home-nav__button">
+                <div className="home-nav__button home-nav--hide">
                     <h3 className="home-nav__subtitle">Map View</h3>
                     <Link className="home-nav__link" to="/map" >
                         <img className="home-nav__icon" src={globeIcon} alt="" />

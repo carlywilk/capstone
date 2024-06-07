@@ -44,10 +44,10 @@
         }
 
         &--hide {
-            display: none;
+            
 
             @include desktop {
-                display: flex;
+                display: none;
             }
         }
     }
@@ -61,21 +61,14 @@
             // padding-left: 2rem;
             // width: 50%;
         }
-
-        &--hide {
-            display: none;
-            @include desktop {
-                display: flex;
-                padding-left: 2rem;
-                width: 75%;
-            }
-        }
     }
 
     &__home-nav {
+        display: none;
 
         @include desktop {
-            margin-top: 6.25rem;
+            margin-top: 11.25rem;
+            display: flex;
         }
     }
 }
