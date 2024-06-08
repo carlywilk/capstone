@@ -12,4 +12,8 @@ export class ServicesApi {
     async getResourceServices(id) {
         return await axios.get(`${this.serverUrl}/api/resources/${id}/services`)
     }
+
+    async getService(serviceType) {
+        return await axios.get(`${this.serverUrl}/api/services/${serviceType}`)
+    }
 }

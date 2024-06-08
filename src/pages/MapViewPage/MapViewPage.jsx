@@ -1,4 +1,3 @@
-
 import { BackToTopButton } from "../../components/BackToTopButton/BackToTopButton.jsx";
 import { Header } from "../../components/Header/Header.jsx";
 import { NavBar } from "../../components/NavBar/NavBar.jsx";

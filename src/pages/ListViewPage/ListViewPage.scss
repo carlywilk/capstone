@@ -6,11 +6,11 @@
 
 .list {
     @include mobile-background;
-    height: 90rem;
+    height: 110rem;
 
     @include desktop {
         @include desktop-background;
-        height: 80rem;
+        height: 110rem;
     }
 
     &__main {

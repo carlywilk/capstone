@@ -20,14 +20,92 @@
     }
 
     &__icon {
-
+        width: 1.5rem;
+        
         @include desktop {
             width: 2rem;
         }
     }
 
+    &__content-container {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__content {
         @include mp2;
+
+        @include desktop {
+            @include p3;
+        }
+    }
+
+    &__services-container {
+        padding-top: 1rem;
+    }
+
+    &__services-title {
+        padding-bottom: 0.25rem;
+        @include mh3;
+
+        @include desktop {
+            @include h4;
+        }
+    }
+
+    &__services {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        border: 1px solid $basic-black;
+        border-radius: 50px;
+        width: fit-content;
+        @include mp2;
+        text-align: center;
+
+        @include desktop {
+            margin: 0 0 1rem 0;
+            padding: 0.5rem 0.75rem;
+            @include p3;
+        }
+    }
+
+    &__website-container {
+        @include content-box-styling;
+        padding-top: 0.5rem;
+        width: 4.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.1s ease;
+        cursor: pointer;
+
+        @include desktop {
+            padding: 0.5rem 0.5rem 0;
+            width: 5.5rem;
+        }
+
+        &:hover {
+            background-color: $secondary-yellow;
+        }
+    
+        &:active {
+            transform: translate(2px, 2px);
+        }
+    }
+
+    &__website-icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        
+        @include desktop {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    &__website-title {
+        @include mp2;
+        text-transform: uppercase;
 
         @include desktop {
             @include p3;

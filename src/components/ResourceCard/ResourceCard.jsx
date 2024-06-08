@@ -40,9 +40,12 @@ export function ResourceCard({
                                 {service.service_type}</p>
                         ))}
                     </div>
-                    <a className="resource-card__link" href={markerInfo.resource_website}>
+                    <div className="resource-card__website-container">
+                        <p className="resource-card__website-title">Website</p>
+                        <a className="resource-card__link" href={markerInfo.resource_website} target="_blank" rel="noreferrer">
                         <img className="resource-card__icon" src={websiteIcon} alt="two links connected together, links to resource website" />
                     </a>
+                    </div>
                 </div>
             ) : (
                 <p className="resource-card__title--padding">No marker selected</p>

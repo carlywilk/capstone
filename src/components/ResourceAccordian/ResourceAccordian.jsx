@@ -12,7 +12,10 @@ import websiteIcon from "../../assets/icons/link_24dp_FILL0_wght400_GRAD0_opsz24
 
 import "./ResourceAccordian.scss";
 
-export function ResourceAccordian({ resourceList }) {
+export function ResourceAccordian({
+    resourceList,
+    servicesList
+    }) {
 
     const [expanded, setExpanded] = useState(null);
 
@@ -63,9 +66,24 @@ export function ResourceAccordian({ resourceList }) {
                                     <img className="accordion__icon" src={emailIcon} alt="email" />
                                     <p className="accordion__content">{resource.resource_email}</p>
                                 </div>
-                                <a className="accordion__link" href={resource.resource_website}>
-                                    <img className="accordion__icon" src={websiteIcon} alt="" />
-                                </a>
+                                <div className="accordion__services-container">
+                                    <h3 className="accordion__services-title">Services Offered:</h3>
+                                    {servicesList
+                                        .filter(service => service.resource_id === resource.id)
+                                        .map((service, index) => (
+                                        <p
+                                            key={index}
+                                            className="accordion__services"
+                                        >
+                                            {service.service_type}</p>
+                                    ))}
+                                </div>
+                                <div className="accordion__website-container">
+                                    <p className="accordion__website-title">Website</p>
+                                    <a className="accordion__link" href={resource.resource_website} target="_blank" rel="noreferrer">
+                                        <img className="accordion__website-icon" src={websiteIcon} alt="" />
+                                    </a>
+                                </div>
                             </AccordionDetails>
                 </Accordion>
             ))}

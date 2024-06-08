@@ -19,7 +19,9 @@ Deployed website can be found [here]()
 ## Screenshots
 
 
-## Tech Stack
+## Instructions & Installation
+
+### Tech Stack
 **Client:**
 - npm
 - react-router-dom
@@ -29,10 +31,7 @@ Deployed website can be found [here]()
 - @mui/base
 
 
-## Instructions & Installation
-
-
-## Environment Variables
+### Environment Variables
 To run this project, you will need to add the following environment variables to your client-side .env file.
 ```
 REACT_APP_SERVER_URL=
@@ -41,7 +40,7 @@ REACT_APP_GOOGLE_MAP_ID=
 ```
 
 
-## Run Locally 
+### Run Locally 
 1. Clone the project repositories:
 ```
 git clone https://github.com/carlywilk/capstone.git
