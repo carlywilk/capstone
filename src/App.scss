@@ -1,3 +1,9 @@
+@use "./styles/partials/colors" as *;
+
 .App {
   text-align: center;
+}
+
+a {
+  color: $accent-raspberry;
 }

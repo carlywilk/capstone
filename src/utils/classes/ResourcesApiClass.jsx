@@ -8,8 +8,4 @@ export class ResourcesApi {
     async getResourceList() {
         return await axios.get(`${this.serverUrl}/api/resources`);
     }
-
-    // async getResourceDetails(id) {
-    //     return await axios.get(`${this.serverUrl}/api/resources/${id}/ser`);
-    // }
 }

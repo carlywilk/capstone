@@ -1,18 +1,11 @@
 "use client";
 
-// import { useState } from 'react';
-
 import { 
     APIProvider,
     Map,
     AdvancedMarker,
-    Pin,
-    InfoWindow
+    Pin
 } from '@vis.gl/react-google-maps';
-
-// import { Link } from 'react-router-dom';
-
-// import { ResourceModal } from '../ResourceModal/ResourceModal.jsx';
 
 import "./ResourceMap.scss";
 
@@ -33,11 +26,9 @@ const places = [
     { id: 15, lat: 43.652117615488805, lng: -79.39821304544161}, // Asian Community AIDS Services (ACAS)
 ];
 
-// const mapCenter = { lat: 43.65702881311502, lng: -79.38428138643111 };
 const mapCenter = { lat: 43.669163391003174, lng: -79.37109629132236 };
 
 export function ResourceMap({
-    selectedMarker,
     onMarkerClick
     }) {
 
@@ -48,10 +39,7 @@ export function ResourceMap({
                     mapId={process.env.REACT_APP_GOOGLE_MAP_ID}
                     defaultZoom={12}
                     center={mapCenter}
-                    // gestureHandling={"cooperative"}
-                    streetViewControl={false}
-                    fullscreenControl={false}
-                    scrollwheel={true}
+                    gestureHandling={"cooperative"}
                     disableDefaultUI={true}
                     >
                         {places.map(marker => (
@@ -66,20 +54,6 @@ export function ResourceMap({
                                 />
                             </AdvancedMarker>
                         ))}
-                        {/* {selectedMarker && (
-                            <InfoWindow
-                                position={selectedMarker}
-                                onCloseClick={() => onMarkerClick(null)}
-                            >
-                                <Link to="/list" >
-                                    <p className="map__card-link">Details here</p>
-                                </Link>
-                                <div className="map__modal">
-                                    <ResourceModal />
-                                </div>
-                            </InfoWindow>
-                        )} */}
-                    {/* <Markers points={places} /> */}
                 </Map>
             </APIProvider>
         </main>

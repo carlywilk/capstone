@@ -24,6 +24,14 @@
         }
     }
 
+    &__span-number {
+        @include mp1;
+
+        @include desktop {
+            @include p2;
+        }
+    }
+
     &__contact-container {
         display: flex;
         flex-direction: column;

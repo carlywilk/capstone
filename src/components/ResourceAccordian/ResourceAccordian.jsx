@@ -60,10 +60,6 @@ export function ResourceAccordian({ resourceList }) {
                                     <img className="accordion__icon" src={emailIcon} alt="email" />
                                     <p className="accordion__content">{resource.resource_email}</p>
                                 </div>
-                                {/* <div className="accordion__info-container">
-                                    <img className="accordion__icon" src="" alt="accessible" />
-                                    <p className="accordion__content"></p>
-                                </div> */}
                                 <a className="accordion__link" href={resource.resource_website}>
                                     <img className="accordion__icon" src={websiteIcon} alt="" />
                                 </a>

@@ -1,6 +1,5 @@
 import { BackToTopButton } from "../../components/BackToTopButton/BackToTopButton.jsx";
 import { Emergency } from "../../components/Emergency/Emergency.jsx";
-import { Footer } from "../../components/Footer/Footer.jsx";
 import { Header } from "../../components/Header/Header.jsx";
 import { HomeNav } from "../../components/HomeNav/HomeNav.jsx";
 import { NavBar } from "../../components/NavBar/NavBar.jsx";
