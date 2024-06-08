@@ -22,7 +22,6 @@ Deployed website can be found [here]()
 ## Instructions & Installation
 
 ### Tech Stack
-**Client:**
 - npm
 - react-router-dom
 - sass
