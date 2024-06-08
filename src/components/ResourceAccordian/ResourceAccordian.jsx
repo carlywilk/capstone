@@ -3,6 +3,7 @@ import { useState } from "react";
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 import addressIcon from "../../assets/icons/location_city_24dp_FILL0_wght400_GRAD0_opsz24.svg";
 import emailIcon from "../../assets/icons/mail_24dp_FILL0_wght400_GRAD0_opsz24.svg";
@@ -36,7 +37,10 @@ export function ResourceAccordian({ resourceList }) {
                         backgroundColor:"#FFF5E1"
                     }}
                     >
-                        <AccordionSummary>
+                        <AccordionSummary
+                            expandIcon={<ArrowDropDownIcon />}
+                            aria-controls="accordion__summary"
+                        >
                         {resourceList.length > 0 ? (
                                 <h2 className="accordion__header">{resource.resource_name}</h2>
                             ) : (

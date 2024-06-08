@@ -1,5 +1,6 @@
 // import { useState } from "react";
 
+import { BackToTopButton } from "../../components/BackToTopButton/BackToTopButton.jsx";
 import { Header } from "../../components/Header/Header.jsx";
 import { NavBar } from "../../components/NavBar/NavBar.jsx";
 import { ResourceCard } from "../../components/ResourceCard/ResourceCard.jsx";
@@ -55,6 +56,7 @@ export function MapViewPage({
                 </section>
                 <h2 className="map-page--hide">To view map on desktop, please go to home page</h2>
             </main>
+            <BackToTopButton />
         </section>
     )
 }

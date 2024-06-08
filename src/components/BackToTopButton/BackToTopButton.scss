@@ -4,14 +4,14 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/typography" as *;
 
-.header {
-    margin: 0 0 1rem;
-    padding: 0.5rem 0.25rem;
-    width: 100%;
+.scroll-button {
     @include content-box-styling;
-    text-decoration: none;
+    position: fixed;
+    bottom: 5.5rem;
+    right: 1rem;
     transition: transform 0.1s ease;
-
+    cursor: pointer;
+    
     &:hover {
         background-color: $basic-white;
     }
@@ -20,17 +20,12 @@
         transform: translate(2px, 2px);
     }
 
-    &__link {
-        text-decoration: none;
-        color: $basic-black;
-    }
-
-    &__title {
-        @include mh1;
-    }
-
     @include desktop {
-        margin: 0 0 1rem;
-        text-align: center;
+        bottom: 3rem;
+        right: 10rem;
+    }
+
+    &__icon {
+        width: 2.5rem;
     }
 }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+import { BackToTopButton } from "../../components/BackToTopButton/BackToTopButton.jsx";
 import { Header } from "../../components/Header/Header.jsx";
 import { HomeNav } from "../../components/HomeNav/HomeNav.jsx";
 import { NavBar } from "../../components/NavBar/NavBar.jsx";
@@ -35,6 +36,7 @@ export function ListViewPage({ resourceList }) {
                     <ResourceAccordian resourceList={sortedResourceList} />
                 </section>
             </main>
+            <BackToTopButton />
         </section>
     )
 }

@@ -1,3 +1,4 @@
+import { BackToTopButton } from "../../components/BackToTopButton/BackToTopButton";
 import { Header } from "../../components/Header/Header";
 import { HomeNav } from "../../components/HomeNav/HomeNav";
 import { NavBar } from "../../components/NavBar/NavBar";
@@ -25,6 +26,7 @@ export function UserPage() {
             <div className="user__nav-bar">
                 <NavBar />
             </div>
+            <BackToTopButton />
         </section>
     );
 }
