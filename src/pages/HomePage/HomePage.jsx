@@ -19,10 +19,13 @@ export function HomePage({
     servicesList
     }) {
 
-    const [showOverlay, setShowOverlay] = useState(true);
+    const [showOverlay, setShowOverlay] = useState(
+        sessionStorage.getItem("overlayShown") !== "true"
+    );
 
     const handleOverlayClose = () => {
         setShowOverlay(false);
+        sessionStorage.setItem("overlayShown", "true");
     };
 
     return (
