@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { BackToTopButton } from "../../components/BackToTopButton/BackToTopButton.jsx";
 import { Emergency } from "../../components/Emergency/Emergency.jsx";
 import { Header } from "../../components/Header/Header.jsx";
@@ -17,8 +19,26 @@ export function HomePage({
     servicesList
     }) {
 
+    const [showOverlay, setShowOverlay] = useState(true);
+
+    const handleOverlayClose = () => {
+        setShowOverlay(false);
+    };
+
     return (
         <section className="landing">
+            {showOverlay && (
+                <div
+                    className="overlay"
+                    onClick={handleOverlayClose}
+                >
+                    <div className="overlay__content-container">
+                        <h1 className="overlay__title">🌈 Welcome to Queer Health Hub!</h1>
+                        <p className="overlay__content">QHH is a local resource for 2SLGBTQIA++ people in the City of Toronto that aims to increase access to information, resources, and healthcare service providers. The Queer Health Hub app is built on the foundations of intersectionality, consent-based care, and queer safety.</p>
+                        <button className="overlay__button" onClick={handleOverlayClose}>View Resources</button>
+                    </div>
+                </div>
+            )}
             <main className="landing__main">
                 <section className="landing__sidebar">
                     <div className="landing__sidebar--padded">

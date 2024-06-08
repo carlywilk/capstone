@@ -38,7 +38,10 @@ export function ResourceAccordian({ resourceList }) {
                     }}
                     >
                         <AccordionSummary
-                            expandIcon={<ArrowDropDownIcon />}
+                            expandIcon={<ArrowDropDownIcon
+                                sx={{
+                                    color: "#000000"}}
+                                />}
                             aria-controls="accordion__summary"
                         >
                         {resourceList.length > 0 ? (

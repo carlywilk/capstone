@@ -77,3 +77,30 @@
     border-radius: 0.25rem;
     box-shadow: $basic-black 4px 4px 0 0;
 }
+
+@mixin overlay-button {
+    padding: 0.5rem 0;
+    border: 2px solid $basic-black;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    color: $basic-black;
+    outline: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    cursor: pointer;
+
+    &:hover {
+        color: $basic-white;
+        background-color: #1A1A1A;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+    @content;
+}

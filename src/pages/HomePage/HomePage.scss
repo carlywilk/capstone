@@ -5,6 +5,8 @@
 @use "../../styles/partials/typography" as *;
 
 .landing {
+    position: relative;
+
     @include mobile-background;
     height: 60rem;
 
@@ -86,6 +88,57 @@
 
         @include desktop {
             display: none;
+        }
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content-container {
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+        @include content-box-styling;
+
+        @include desktop {
+            width: 50%;
+        }
+    }
+
+    &__title {
+        @include mh1;
+        text-align: center;
+
+        @include desktop {
+            @include h1;
+        }
+    }
+
+    &__content {
+        padding: 0.5rem 0;
+        @include mp1;
+        text-align: center;
+
+        @include desktop {
+            @include p2;
+        }
+    }
+
+    &__button {
+        @include overlay-button;
+        @include mp1;
+
+        @include desktop {
+            @include p2;
         }
     }
 }
