@@ -14,7 +14,7 @@
     &__button {
         @include mobile-button;
         &:hover {
-            background-color: $basic-white;
+            background-color: $secondary-yellow;
         }
         &:active {
             box-shadow: $basic-black 2px 2px 0 0;

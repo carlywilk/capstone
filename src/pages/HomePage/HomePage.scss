@@ -8,7 +8,7 @@
     position: relative;
 
     @include mobile-background;
-    height: 60rem;
+    height: 70rem;
 
     @include desktop {
         @include desktop-background;
