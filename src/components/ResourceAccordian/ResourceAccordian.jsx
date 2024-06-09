@@ -33,7 +33,7 @@ export function ResourceAccordian({
                     disableGutters={true}
                     onChange={handleChange(resource.id)}
                     sx={{
-                        margin:"0.75rem 0",
+                        margin:"0 0 1rem 0",
                         border:"2px solid #000000",
                         borderRadius:"0.25rem",
                         boxShadow:"#000000 4px 4px 0 0",
@@ -60,11 +60,11 @@ export function ResourceAccordian({
                                 </div>
                                 <div className="accordion__info-container">
                                     <img className="accordion__icon" src={phoneIcon} alt="phone" />
-                                    <p className="accordion__content">{resource.resource_phone}</p>
+                                    <a className="accordion__content-link" href={resource.resource_phone}>{resource.resource_phone}</a>
                                 </div>
                                 <div className="accordion__info-container">
                                     <img className="accordion__icon" src={emailIcon} alt="email" />
-                                    <p className="accordion__content">{resource.resource_email}</p>
+                                    <a className="accordion__content-link" href={resource.resource_email}>{resource.resource_email}</a>
                                 </div>
                                 <div className="accordion__services-container">
                                     <h3 className="accordion__services-title">Services Offered:</h3>

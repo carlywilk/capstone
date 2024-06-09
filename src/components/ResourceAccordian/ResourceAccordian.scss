@@ -40,6 +40,17 @@
         }
     }
 
+    &__content-link {
+        @include mp2;
+        color: $accent-raspberry;
+        text-decoration: none;
+
+        @include desktop {
+            @include p3;
+            color: $accent-raspberry;
+        }
+    }
+
     &__services-container {
         padding-top: 1rem;
     }

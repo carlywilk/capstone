@@ -54,11 +54,24 @@
         }
     }
 
+    &__content-link {
+        @include mp1;
+        font-size: 0.85rem;
+        color: $accent-raspberry;
+        text-decoration: none;
+
+        @include desktop {
+            @include p3;
+            color: $accent-raspberry;
+        }
+    }
+
     &__services-title {
         padding-bottom: 0.25rem;
         @include mh3;
 
         @include desktop {
+            padding-top: 0.5rem;
             @include h4;
         }
     }

@@ -23,12 +23,12 @@ export function ResourceCard({
 
                     <div className="resource-card__info-container">
                         <img className="resource-card__icon" src={phoneIcon} alt="" />
-                        <p className="resource-card__content">{markerInfo.resource_phone}</p>
+                        <a className="resource-card__content-link" href={markerInfo.resource_phone}>{markerInfo.resource_phone}</a>
                     </div>
 
                     <div className="resource-card__info-container">
                         <img className="resource-card__icon" src={emailIcon} alt="" />
-                        <p className="resource-card__content">{markerInfo.resource_email}</p>
+                        <a className="resource-card__content-link" href={markerInfo.resource_email}>{markerInfo.resource_email}</a>
                     </div>
                     <div className="resource-card__services-container">
                         <h3 className="resource-card__services-title">Services Offered:</h3>
@@ -44,7 +44,7 @@ export function ResourceCard({
                         <p className="resource-card__website-title">Website</p>
                         <a className="resource-card__link" href={markerInfo.resource_website} target="_blank" rel="noreferrer">
                         <img className="resource-card__icon" src={websiteIcon} alt="two links connected together, links to resource website" />
-                    </a>
+                        </a>
                     </div>
                 </div>
             ) : (
