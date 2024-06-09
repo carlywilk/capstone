@@ -94,7 +94,7 @@ npm start
 ```
 | Parameter | Type     | Description                                  |
 | :-------- | :------- | :------------------------------------------- |
-| `api_key` | `string` | **Required:** Your API key & ID of resource  |
+| `api_key` | `integer` | **Required:** Your API key & ID of resource  |
 
 #### Get all services types for one resource
 ```
