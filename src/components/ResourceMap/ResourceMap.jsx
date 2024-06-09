@@ -37,7 +37,7 @@ export function ResourceMap({
             <APIProvider apiKey={process.env.REACT_APP_GOOGLE_API_KEY}>
                 <Map
                     mapId={process.env.REACT_APP_GOOGLE_MAP_ID}
-                    defaultZoom={12}
+                    defaultZoom={11}
                     center={mapCenter}
                     gestureHandling={"cooperative"}
                     disableDefaultUI={true}

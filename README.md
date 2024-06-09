@@ -13,10 +13,23 @@ Server API Repo can be found [here](https://github.com/carlywilk/capstone-api.gi
 
 
 ## Features
-Deployed website can be found [here]()
+The website includes a map of Toronto with 15 clickable pins, each of which pulls up information on a different resource.
+Each email, phone number, and website link is clickable, allowing the user to navigate to whichever resource they wish easily. 
+Each resource card includes a list of services offered for that specific resource to help guide the user towards the a resource that is right for them.
+There is a scroll to top button on each page that appears after the user scrolls down a certain amount.
+There is a map view page for users that are viewing the site on mobile width to keep the landing page on mobile widths tidy and simple. 
+
 
 
 ## Screenshots
+**Mobile User**
+<img src="./src/assets/gifs/carly-wilk-capstone-mobile.gif" width="320">
+
+
+
+**Desktop User**
+<img src="./src/assets/gifs/carly-wilk-capstone-desktop.gif" width="850">
+
 
 
 ## Instructions & Installation
@@ -89,8 +102,11 @@ npm start
 
 
 ## Insights and Lessons Learned
-
+- While creating the knex call on my server side to select service by type was simple, implementing a filter function for services offered on the list view page was much more difficult than anticipated. A larger period of time needs to be dedicated to coding this utility. 
+- The Google Maps API documentation, while thorough, is extremely complicated and confusing. Much more time is needed in order to implement the map utility with customizations, including custom markers, info windows, and more. 
 
 ## Next Steps and Future Directions
-
-- Further design features on the map to make it more user friendly, including different pin styles or colors
+- Continuous addition of resources to the database to make it as comprehensive as possible.
+- Further design features on the map to make it more user friendly, including different pin styles or colors.
+- Add a filter function on the list view page for the user to only view resources that offer the specific service they are looking for.
+- Ideally, this app would be extended past the City of Toronto, into the GTA and beyond in order to be a hub for users in multiple towns and cities. The addition of a user component to the site, where users can submit their resource recommendations and feedback, would make the compilation of simpler to handle on the admin of the app. 
