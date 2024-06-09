@@ -98,7 +98,7 @@ npm start
 | `resource_id`   | `integer` | **Required:** ID of resource      |
 
 #### Get all service types for one resource
-- Service filter utility is not implemented in the current version of app, there this call is not currently in use. 
+- Service filter utility is not implemented in the current version of app, therefore this call is not currently in use. 
 ```
   GET /api/resources/${id}/services
 ```
