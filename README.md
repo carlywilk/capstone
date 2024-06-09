@@ -84,25 +84,29 @@ npm start
 ```
   GET /api/resources
 ```
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required:** Your API key |
+| Parameter   | Type     | Description                |
+| :---------- | :------- | :------------------------- |
+| `serverUrl` | `string` | **Required:** Server URL   |
 
 #### Get one resource
 ```
   GET /api/resources/${id}
 ```
-| Parameter | Type     | Description                                  |
-| :-------- | :------- | :------------------------------------------- |
-| `api_key` | `integer` | **Required:** Your API key & ID of resource  |
+| Parameter       | Type      | Description                       |
+| :-------------- | :-------- | :-------------------------------- |
+| `serverUrl`     | `string`  | **Required:** Server URL          |
+| `resource_id`   | `integer` | **Required:** ID of resource      |
 
-#### Get all services types for one resource
+#### Get all service types for one resource
+- Service filter utility is not implemented in the current version of app, there this call is not currently in use. 
 ```
   GET /api/resources/${id}/services
 ```
-| Parameter | Type     | Description                                  |
-| :-------- | :------- | :------------------------------------------- |
-| `api_key` | `string` | **Required:** Your API key & ID of resource  |
+| Parameter        | Type      | Description                                   |
+| :--------------- | :-------- | :-------------------------------------------- |
+| `serverUrl`      | `string`  | **Required:** Server URL                      |
+| `resource_id`    | `integer` | **Required:** ID of resource                  |
+| `service_type`   | `string`  | **Required:** Service type (eg. Primary Care) |
 
 
 ## Insights and Lessons Learned
