@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { BackToTopButton } from "../../components/BackToTopButton/BackToTopButton.jsx";
+import { Contact } from "../../components/Contact/Contact.jsx";
 import { Emergency } from "../../components/Emergency/Emergency.jsx";
 import { Header } from "../../components/Header/Header.jsx";
 import { HomeNav } from "../../components/HomeNav/HomeNav.jsx";
@@ -68,6 +69,9 @@ export function HomePage({
             </main>
             <div className="landing__emergency">
                 <Emergency />
+            </div>
+            <div className="landing__contact">
+                <Contact />
             </div>
             <div className="landing__nav-bar">
                 <NavBar />

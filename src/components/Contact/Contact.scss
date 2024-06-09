@@ -1,0 +1,39 @@
+@use "../../styles/partials/breakpoints.scss" as *;
+@use "../../styles//partials/colors.scss" as *;
+@use "../../styles/partials/global" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.contact {
+    margin: 1rem;
+    padding: 0.5rem;
+    @include content-box-styling;
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+        margin: 1rem auto;
+        width: fit-content;
+    }
+
+    &__title {
+        @include mh2;
+
+        @include desktop {
+            @include h4;
+        }
+    }
+
+
+    &__content {
+        @include mp1;
+
+        @include desktop {
+            @include p3;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+}
