@@ -13,11 +13,11 @@ Server API Repo can be found [here](https://github.com/carlywilk/capstone-api.gi
 
 
 ## Features
-The website includes a map of Toronto with 15 clickable pins, each of which pulls up information on a different resource.
+The website includes a map of Toronto with 15 clickable pins, each of which pulls up information on a different healthcare resource.
 
 Each email, phone number, and website link is clickable, allowing the user to navigate to whichever resource they wish easily. 
 
-Each resource card includes a list of services offered to help guide the user towards the resource that is right for them.
+Each healthcare resource card includes a list of services offered to help guide the user towards the resource that is right for them.
 
 There is a scroll to top button on each page that appears after the user scrolls down a certain amount.
 The map view page for users that are viewing the site on mobile width keeps the landing page on mobile screens tidy and simple. 
