@@ -14,7 +14,6 @@ import "./ListViewPage.scss";
 
 export function ListViewPage() {
     const [resourceList, setResourceList] = useState([]);
-    // const [sortedResourceList, setSortedResourceList] = useState([]);
     const [servicesList, setServicesList] = useState([]);
     const [filteredResourceList, setFilteredResourceList] = useState([]);
 
@@ -66,8 +65,6 @@ export function ListViewPage() {
         try {
             const response = await servicesApi.getService([event.target.value]);
             setAllServices(response.data);
-            console.log(response.data);
-
             const filteredResources = resourceList
                 .filter(resource => {
                     const matchingServices = response.data.filter(service => service.service_type === event.target.value);
