@@ -12,7 +12,7 @@ import websiteIcon from "../../assets/icons/link_24dp_FILL0_wght400_GRAD0_opsz24
 
 import "./ResourceAccordian.scss";
 
-export function ResourceAccordian({
+export function ResourceAccordion({
     resourceList,
     servicesList
     }) {

@@ -10,7 +10,6 @@ import { ListViewPage } from "./pages/ListViewPage/ListViewPage.jsx";
 import { MapViewPage } from "./pages/MapViewPage/MapViewPage.jsx";
 import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage.jsx";
 import { UserPage } from "./pages/UserPage/UserPage.jsx";
-import { TestPage } from './pages/TestPage/TestPage.jsx';
 
 import './App.scss';
 
@@ -62,7 +61,6 @@ function App() {
         <Route path="/map" element={<MapViewPage resourceList={resourceList} selectedMarker={selectedMarker} onMarkerClick={handMarkerClick} markerInfo={markerInfo} servicesList={servicesList} />} />
         <Route path="/list" element={<ListViewPage resourceList={resourceList} />} />
         <Route path="/user" element={<UserPage /> } />
-        <Route path="/test" element={<TestPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
