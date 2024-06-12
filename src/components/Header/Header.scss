@@ -27,6 +27,7 @@
 
     &__title {
         @include mh1;
+        text-align: center;
     }
 
     @include desktop {

@@ -7,7 +7,7 @@
 .list {
     @include mobile-background;
     height: fit-content;
-    min-height: 34rem;
+    min-height: 100vh;
 
     @include desktop {
         @include desktop-background;
