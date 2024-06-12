@@ -98,6 +98,7 @@
 
     &__tag {
         padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+        border: 2px solid $basic-black;
         border-radius: 0.25rem;
         width: 100%;
         max-width: 28rem;
@@ -107,12 +108,16 @@
             image: url("../../assets/icons/arrow_drop_down_24dp_FILL0_wght400_GRAD0_opsz24.svg");
             repeat: no-repeat;
             position: right 0.5rem center;
+            color: $primary-white;
         }
         @include mp1;
         text-wrap: wrap;
 
+        &:hover {
+            background-color: $secondary-yellow;
+        }
+
         &:focus {
-            border: 1px solid $basic-black;
             outline: none;
         }
     }
