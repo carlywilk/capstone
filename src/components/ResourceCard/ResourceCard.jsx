@@ -48,7 +48,7 @@ export function ResourceCard({
                     </div>
                 </div>
             ) : (
-                <p className="resource-card__title--padding">No marker selected</p>
+                <p className="resource-card__title--padding">Please select a marker</p>
             )}
         </div>
     );
