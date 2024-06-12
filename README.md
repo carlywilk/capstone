@@ -12,6 +12,9 @@ Queer Health Hub is a local resource for 2SLGBTQIA++ people in the City of Toron
 Server API Repo can be found [here](https://github.com/carlywilk/capstone-api.git)
 
 
+Deployed site can be found [here](https://queerhealthhub.netlify.app/)
+
+
 ## Features
 The website includes a map of Toronto with 15 clickable pins, each of which pulls up information on a different healthcare resource.
 
