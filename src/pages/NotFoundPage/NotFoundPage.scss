@@ -5,11 +5,6 @@
 @use "../../styles/partials/typography" as *;
 
 .not-found {
-    @include mobile-background;
-
-    @include desktop {
-        @include desktop-background;
-    }
 
     &__content-container {
         margin: 0 auto;

@@ -5,12 +5,10 @@
 @use "../../styles/partials/typography" as *;
 
 .list {
-    @include mobile-background;
     height: fit-content;
     min-height: 100vh;
 
     @include desktop {
-        @include desktop-background;
         height: fit-content;
     }
 
@@ -41,6 +39,13 @@
 
             @include desktop {
                 padding: 0;
+            }
+        }
+
+        &--header {
+
+            @include desktop {
+                padding-bottom: 11.7rem;
             }
         }
 

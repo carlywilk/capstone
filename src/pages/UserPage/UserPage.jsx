@@ -2,7 +2,7 @@ import { BackToTopButton } from "../../components/BackToTopButton/BackToTopButto
 import { Header } from "../../components/Header/Header";
 import { HomeNav } from "../../components/HomeNav/HomeNav";
 import { NavBar } from "../../components/NavBar/NavBar";
-import { SearchBar } from "../../components/SearchBar/SearchBar";
+// import { SearchBar } from "../../components/SearchBar/SearchBar";
 
 import "./UserPage.scss";
 
@@ -13,7 +13,7 @@ export function UserPage() {
                 <section className="user__sidebar">
                     <div className="user__sidebar--padded">
                         <Header />
-                        <SearchBar />
+                        {/* <SearchBar /> */}
                     </div>
                 <section className="user__home-nav">
                     <HomeNav />

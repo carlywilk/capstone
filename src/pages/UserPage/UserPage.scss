@@ -5,11 +5,9 @@
 @use "../../styles/partials/typography" as *;
 
 .user {
-    @include mobile-background;
     height: 60rem;
 
     @include desktop {
-        @include desktop-background;
         height: 80rem;
     }
 
