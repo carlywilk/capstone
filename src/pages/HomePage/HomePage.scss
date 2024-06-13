@@ -6,12 +6,9 @@
 
 .landing {
     position: relative;
-
-    @include mobile-background;
     height: 70rem;
 
     @include desktop {
-        @include desktop-background;
         height: 80rem;
     }
 

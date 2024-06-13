@@ -60,11 +60,11 @@ export function ResourceAccordion({
                                 </div>
                                 <div className="accordion__info-container">
                                     <img className="accordion__icon" src={phoneIcon} alt="phone" />
-                                    <a className="accordion__content-link" href={resource.resource_phone}>{resource.resource_phone}</a>
+                                    <a className="accordion__content-link" href={`tel:${resource.resource_phone}`}>{resource.resource_phone}</a>
                                 </div>
                                 <div className="accordion__info-container">
                                     <img className="accordion__icon" src={emailIcon} alt="email" />
-                                    <a className="accordion__content-link" href={resource.resource_email}>{resource.resource_email}</a>
+                                    <a className="accordion__content-link" href={`mailto:${resource.resource_email}`}>{resource.resource_email}</a>
                                 </div>
                                 <div className="accordion__services-container">
                                     <h3 className="accordion__services-title">Services Offered:</h3>

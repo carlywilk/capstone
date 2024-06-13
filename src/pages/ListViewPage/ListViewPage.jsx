@@ -8,7 +8,7 @@ import { Header } from "../../components/Header/Header.jsx";
 import { HomeNav } from "../../components/HomeNav/HomeNav.jsx";
 import { NavBar } from "../../components/NavBar/NavBar.jsx";
 import { ResourceAccordion } from "../../components/ResourceAccordian/ResourceAccordian.jsx";
-import { SearchBar } from "../../components/SearchBar/SearchBar.jsx";
+// import { SearchBar } from "../../components/SearchBar/SearchBar.jsx";
 
 import "./ListViewPage.scss";
 
@@ -82,8 +82,10 @@ export function ListViewPage() {
             <main className="list__main">
                 <section className="list__sidebar">
                     <div className="list__sidebar--padded">
-                        <Header />
-                        <SearchBar />
+                        <div className="list__sidebar--header">
+                            <Header />
+                        </div>
+                        {/* <SearchBar /> */}
                         <div className="list__home-nav">
                             <HomeNav />
                         </div>
