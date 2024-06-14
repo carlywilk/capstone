@@ -15,6 +15,9 @@ Server API Repo can be found [here](https://github.com/carlywilk/capstone-api.gi
 Deployed site can be found [here](https://queerhealthhub.netlify.app/)
 
 
+App pitch slides can be found [here](./src/assets/presentation/demo-day-prez.pdf)
+
+
 ## Features
 The website includes a map of Toronto with 15 clickable pins, each of which pulls up information on a different healthcare resource.
 
