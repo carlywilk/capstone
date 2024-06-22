@@ -92,10 +92,15 @@
         }
     }
 
+    &__links-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__website-container {
         @include content-box-styling;
         padding-top: 0.5rem;
-        width: 4.25rem;
+        width: 4.75rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -133,6 +138,44 @@
 
         @include desktop {
             @include p3;
+        }
+    }
+
+    &__directions {
+        @include content-box-styling;
+        padding-top: 0.5rem;
+        width: 6.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        transition: transform 0.1s ease;
+        cursor: pointer;
+        @include mp2;
+        text-transform: uppercase;
+
+        @include desktop {
+            padding: 0.5rem 1rem 0;
+            width: 7rem;
+            @include p3;
+        }
+
+        &:hover {
+            background-color: $secondary-yellow;
+        }
+    
+        &:active {
+            transform: translate(2px, 2px);
+        }
+    }
+
+    &__directions-icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        
+        @include desktop {
+            width: 1.8rem;
+            height: 1.8rem;
         }
     }
 }
