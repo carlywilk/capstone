@@ -59,4 +59,8 @@
             @include p3;
         }
     }
+
+    &__link {
+        text-decoration: none;
+    }
 }

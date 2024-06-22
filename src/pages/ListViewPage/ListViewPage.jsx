@@ -54,6 +54,7 @@ export function ListViewPage() {
         { label: "Indigenous Health & Non-Western Medicine", value: 6 },
         { label: "Information & Resources", value: 7 },
         { label: "Pediatrics", value: 8 },
+        { label: "Virtual Care", value: 9},
     ]
 
     const [allServices, setAllServices] = useState([]);

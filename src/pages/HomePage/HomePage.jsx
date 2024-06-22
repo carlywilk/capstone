@@ -39,8 +39,6 @@ export function HomePage({
                     <div className="overlay__content-container">
                         <h1 className="overlay__title">🌈 Welcome to Queer Health Hub!</h1>
                         <p className="overlay__content">QHH is a local resource for 2SLGBTQIA++ people in the City of Toronto that aims to increase access to information, resources, and healthcare service providers. The Queer Health Hub app is built on the foundations of intersectionality, consent-based care, and queer safety.</p>
-                        <p className="overlay__sub-content">Resources are continually added</p>
-                        <p className="overlay__sub-content--padded">Email <span><a className="overlay__sub-content-link" href="mailto:queer.health.hub@gmail.com">queer.health.hub@gmail.com</a></span> if you want to submit a resource to be uploaded.</p>
                         <button className="overlay__button" onClick={handleOverlayClose}>View Resources</button>
                     </div>
                 </div>

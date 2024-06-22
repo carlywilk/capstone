@@ -22,9 +22,9 @@
         height: 80vh;
     }
 
-    &__modal {
-        @include desktop {
-            display: none;
-        }
-    }
+    // &__modal {
+    //     @include desktop {
+    //         display: none;
+    //     }
+    // }
 }

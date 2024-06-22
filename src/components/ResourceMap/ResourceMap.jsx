@@ -38,9 +38,11 @@ export function ResourceMap({
                 <Map
                     mapId={process.env.REACT_APP_GOOGLE_MAP_ID}
                     defaultZoom={11}
-                    center={mapCenter}
-                    gestureHandling={"cooperative"}
+                    defaultCenter={mapCenter}
+                    gestureHandling="auto"
                     disableDefaultUI={true}
+                    zoomControl={true}
+                    style={{ width: '100%', height: '100%' }}
                     >
                         {places.map(marker => (
                             <AdvancedMarker
