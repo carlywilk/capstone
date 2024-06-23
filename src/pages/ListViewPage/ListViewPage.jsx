@@ -46,16 +46,17 @@ export function ListViewPage() {
 
     const serviceTags = [
         { label: "", value: 0 },
-        { label: "Primary Care", value: 1 },
-        { label: "Sexual Health", value: 2 },
-        { label: "Gender & Transition-Related Care", value: 3 },
-        { label: "Post-Surgical Care", value: 4 },
+        { label: "Gender & Transition-Related Care", value: 1 },
+        { label: "Harm Reduction", value: 2 },
+        { label: "Indigenous Health & Non-Western Medicine", value: 3 },
+        { label: "Information & Resources", value: 4 },
         { label: "Mental Health & Wellbeing", value: 5 },
-        { label: "Indigenous Health & Non-Western Medicine", value: 6 },
-        { label: "Information & Resources", value: 7 },
-        { label: "Pediatrics", value: 8 },
-        { label: "Virtual Care", value: 9},
-    ]
+        { label: "Pediatrics", value: 6 },
+        { label: "Post-Surgical Care", value: 7 },
+        { label: "Primary Care", value: 8 },
+        { label: "Sexual Health", value: 9 },
+        { label: "Virtual Care", value: 10 }
+    ];
 
     const [allServices, setAllServices] = useState([]);
     const [selectedService, setSelectedService] = useState(serviceTags[0].value);

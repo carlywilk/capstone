@@ -10,20 +10,24 @@ import {
 import "./ResourceMap.scss";
 
 const places = [
-    { id: 1, lat: 43.66191187865744, lng: -79.38733411845752}, // WCH
-    { id: 2, lat: 43.662574638569616, lng: -79.3722748896215}, // Sherbourne Health
-    { id: 3, lat: 43.66015563568564, lng: -79.37878054544127}, // Hassle Free Clinic
-    { id: 4, lat: 43.689176099169295, lng: -79.29886194543997}, // Thrive Kids Clinic
-    { id: 5, lat: 43.65377124428925, lng: -79.40547702026059}, // 2SLGBTQIA+ Neurology Clinic
-    { id: 6, lat: 43.66209018250031, lng: -79.37318341076121}, // Anishnawbe Health Toronto
-    { id: 7, lat: 43.64310049205079, lng: -79.42116537608366}, // CAMH
-    { id: 8, lat: 43.660621683748666, lng: -79.3860264337501}, // Toronto Plastic Surgery
-    { id: 9, lat: 43.65006404774825, lng: -79.36939147427779}, // 2-Spirited People of the 1st Nations
-    { id: 10, lat: 43.66667398942517, lng: -79.38107104544095}, // THE 519
-    { id: 11, lat: 43.662478115873796, lng: -79.37211763009694}, // Rainbow Health Ontario
-    { id: 12, lat: 43.6857116140509, lng: -79.32251557427611}, // Toronto Pflag
-    { id: 13, lat: 43.66994287413304, lng: -79.39749796078503}, // Planned Parenthood Toronto
-    { id: 15, lat: 43.652117615488805, lng: -79.39821304544161}, // Asian Community AIDS Services (ACAS)
+    { id: 1, lat: 43.66191187865744, lng: -79.38733411845752 }, // WCH
+    { id: 2, lat: 43.662574638569616, lng: -79.3722748896215 }, // Sherbourne Health
+    { id: 3, lat: 43.66015563568564, lng: -79.37878054544127 }, // Hassle Free Clinic
+    { id: 4, lat: 43.689176099169295, lng: -79.29886194543997 }, // Thrive Kids Clinic
+    { id: 5, lat: 43.65377124428925, lng: -79.40547702026059 }, // 2SLGBTQIA+ Neurology Clinic
+    { id: 6, lat: 43.66209018250031, lng: -79.37318341076121 }, // Anishnawbe Health Toronto
+    { id: 7, lat: 43.64310049205079, lng: -79.42116537608366 }, // CAMH
+    { id: 8, lat: 43.660621683748666, lng: -79.3860264337501 }, // Toronto Plastic Surgery
+    { id: 9, lat: 43.65006404774825, lng: -79.36939147427779 }, // 2-Spirited People of the 1st Nations
+    { id: 10, lat: 43.66667398942517, lng: -79.38107104544095 }, // THE 519
+    { id: 11, lat: 43.662478115873796, lng: -79.37211763009694 }, // Rainbow Health Ontario
+    { id: 12, lat: 43.6857116140509, lng: -79.32251557427611 }, // Toronto Pflag
+    { id: 13, lat: 43.66994287413304, lng: -79.39749796078503 }, // Planned Parenthood Toronto
+    { id: 15, lat: 43.652117615488805, lng: -79.39821304544161 }, // Asian Community AIDS Services (ACAS)
+    { id: 17, lat: 43.66897572284504, lng: -79.37895321845717 }, // Casey House
+    { id: 18, lat: 43.657755912484255, lng: -79.38642600126114 }, // Transgender Youth Clinic
+    { id: 19, lat: 43.65036218930852, lng: -79.37700571475332 }, // Black CAP
+    { id: 20, lat: 43.64349026898894, lng: -79.43099188776998 }, // Breakaway: Pieces to Pathways Program
 ];
 
 const mapCenter = { lat: 43.669163391003174, lng: -79.37109629132236 };
