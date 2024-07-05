@@ -36,4 +36,21 @@
     &__link {
         text-decoration: none;
     }
+
+    &__ig {
+        margin-top: 0.5rem;
+        width: 1.75rem;
+
+        @include desktop {
+            width: 2rem;
+        }
+    }
+
+    &__ig-icon {
+        width: 1.75rem;
+
+        @include desktop {
+            width: 2rem;
+        }
+    }
 }

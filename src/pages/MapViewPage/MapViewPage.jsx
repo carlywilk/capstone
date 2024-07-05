@@ -3,7 +3,7 @@ import { Header } from "../../components/Header/Header.jsx";
 import { NavBar } from "../../components/NavBar/NavBar.jsx";
 import { ResourceCard } from "../../components/ResourceCard/ResourceCard.jsx";
 import { ResourceMap } from "../../components/ResourceMap/ResourceMap.jsx";
-import { SearchBar } from "../../components/SearchBar/SearchBar.jsx";
+// import { SearchBar } from "../../components/SearchBar/SearchBar.jsx";
 
 import "./MapViewPage.scss";
 
@@ -21,7 +21,7 @@ export function MapViewPage({
                 <section className="map-page__sidebar">
                     <div className="map-page__sidebar--padded">
                         <Header />
-                    <SearchBar />
+                    {/* <SearchBar /> */}
                     </div>
                     <NavBar />
                 </section>

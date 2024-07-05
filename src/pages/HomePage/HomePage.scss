@@ -9,7 +9,7 @@
     height: 70rem;
 
     @include desktop {
-        height: 80rem;
+        height: 85rem;
     }
 
     &__main {
@@ -128,6 +128,28 @@
         @include desktop {
             @include p2;
         }
+    }
+
+    &__sub-content {
+
+        @include desktop {
+            padding: 1rem 0 0;
+            @include p3;
+            text-align: center;
+        }
+
+        &--padded {
+
+            @include desktop {
+                padding-bottom: 1rem;
+                @include p3;
+                text-align: center;
+            }
+        }
+    }
+
+    &__sub-content-link {
+        text-decoration: none;
     }
 
     &__button {
