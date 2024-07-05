@@ -4,9 +4,13 @@ import { HomeNav } from "../../components/HomeNav/HomeNav";
 import { NavBar } from "../../components/NavBar/NavBar";
 // import { SearchBar } from "../../components/SearchBar/SearchBar";
 
+import { useAuth } from "../../utils/contexts/authContexts/authContexts";
+
 import "./UserPage.scss";
 
 export function UserPage() {
+    const { currentUser } = useAuth();
+
     return (
         <section className="user">
             <main className="user__main">
